@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="../../../asserts/CSS/normalize.css">
+    <link rel="stylesheet" href="../../../asserts/fonts/css/all.min.css">
+    <style>
+        header{
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 1px 1px 1px 1px;
+            height: 80px;
+            width: 100%;
+            top: 0;
+            position: absolute;
+            z-index: 2;
+        }
+
+        header>img{
+            width: 190px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        header>nav{
+            position: absolute;
+            top: 0px;
+            right: 40px;
+            cursor: pointer;
+        }
+        header>nav>ul>li{
+            display: inline-block;
+            padding: 10px;
+            border-right: 2px solid black;
+        }
+
+        header>nav>ul>li:first-child{
+            border-left: 2px black solid;
+            display: inline-block;
+            padding: 10px;
+        }
+        header>nav>ul>li:hover i{
+            color: red;
+        }
+        header>nav>ul>li:hover a{
+            color: red;
+        }
+        main ul>li:hover i{
+            color: red;
+        }
+        main ul>li:hover a{
+            color: red;
+        }
+        header{
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+
+        }
+
+
+        main{
+          position: relative;
+            margin-top: 75px;
+
+        }
+        main>nav{
+            background-color: purple;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 220px;
+
+
+        }
+        main>nav>ul>li{
+            list-style: none;
+            color: white;
+            padding-top: 30px;
+            cursor: pointer;
+
+        }
+        main>nav>ul>li>a{
+           color: white;
+            text-decoration: none;
+        }
+        main>section{
+            margin-left: 220px;
+            padding: 7px;
+        }
+
+        main>section>section:first-child{
+
+            height: 300px;
+            position: relative;
+        }
+        main>section>section:first-child>div{
+
+            height: 100%;
+            width: calc(100%/3);
+            position: absolute;
+        }
+
+        main>section>section:first-child>div:nth-child(1){
+            background: url("../../../asserts/images/113.PNG");
+            left: 0;
+
+        }
+        main>section>section:first-child>div:nth-child(2){
+            background: url("../../../asserts/images/113.PNG");
+            left: calc(100%/3);
+        }
+        main>section>section:first-child>div:nth-child(3){
+            background: url("../../../asserts/images/113.PNG");
+            right: 0;
+        }
+
+
+        footer{
+            height: 50px;
+            background-color: darkgray;
+        }
+        footer>h4{
+            text-align: center;
+            margin-top: 0;
+            padding-top: 17px;
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+
+    <img alt="Logo" src="../../../asserts/images/favicon.png">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i> Home</li>
+            <li><i class="fa-solid fa-earth-americas"></i> Service</li>
+            <li><i class="fa-solid fa-phone"></i> Contact</li>
+            <li><i class="fa-solid fa-address-card"></i> About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#"> Home</a></li>
+            <li><i class="fa-solid fa-earth-americas"></i><a href="#"> Service</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="#"> Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#"> About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Alias asperiores at, autem blanditiis commodi culpa cupiditate, doloribus expedita facere fugit hic id
+                itaque maiores minima minus nesciunt praesentium quasi, suscipit veritatis vitae? Deleniti dicta et
+                officia possimus vero?</p>
+            <p>Ad beatae consequatur dicta distinctio dolor dolorem, dolorum ea exercitationem explicabo harum labore
+                laudantium libero magni mollitia, perspiciatis, quae quam quisquam reiciendis totam ullam ut veritatis
+                voluptatum? Eveniet, laudantium voluptas.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+        </section>
+    </section>
+
+</main>
+
+<footer>
+    <h4>Developed By IJSE</h4>
+</footer>
+
+</body>
+</html>

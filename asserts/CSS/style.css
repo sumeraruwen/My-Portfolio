@@ -1,0 +1,63 @@
+/*===============================
+          Header Nav Bar
+===============================*/
+
+header{
+    background-color: black;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header>section>nav>ul:nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    cursor: pointer;
+}
+header>section>nav>ul:nth-child(2){
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    cursor: pointer;
+}
+header>section>nav>ul:nth-child(1)>li{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+header>section>nav>ul:nth-child(2)>li{
+    display: inline-block;
+    padding: 15px;
+    color: white;
+}
+
+/*===============================
+          Home Section
+===============================*/
+main{
+    position: relative;
+}
+
+main>section:nth-child(1){
+    background-color: black;
+    top: 0px;
+    /*position: relative;*/
+    height: 680px;
+
+}
+main>section:nth-child(1)>aside>h2{
+    color: white;
+    font-size: 40px;
+    position:absolute;
+    top: 0px;
+    left: 300px;
+    margin-top: 0px;
+
+}
+main>section>aside>p{
+    color: white;
+    margin-top: 0;
+}
+
+
