@@ -6,6 +6,7 @@ header{
     background-color: black;
     height: 80px;
     font-family: 'Poppins', sans-serif;
+
 }
 
 header>section>nav>ul:nth-child(1){
@@ -31,6 +32,11 @@ header>section>nav>ul:nth-child(2)>li{
     padding: 15px;
     color: white;
 }
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
 
 /*===============================
           Home Section
@@ -42,15 +48,15 @@ main{
 main>section:nth-child(1){
     background-color: black;
     top: 0px;
-    /*position: relative;*/
+    position: relative;
     height: 680px;
 
 }
 main>section:nth-child(1)>aside>h2{
     color: white;
     font-size: 40px;
-    position:absolute;
-    top: 0px;
+    position:relative;
+    top: 30px;
     left: 300px;
     margin-top: 0px;
 

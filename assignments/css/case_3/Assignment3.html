@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 3</title>
+  <style>
+   body>div{
+     position: fixed;
+     width: 280px;
+     height: 280px;
+     border: 18px solid darkgray;
+     border-radius: 100%;
+     top:0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+
+   }
+   body>div>div{
+     position: fixed;
+     width: 250px;
+     height: 250px;
+     border: 18px solid red;
+     border-radius: 100%;
+     top:0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+   }
+   body>section>div{
+       position: absolute;
+       width: 246px;
+       height: 246px;
+       background-color: purple;
+       border-radius: 100%;
+       top:0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       margin: auto;
+
+   }
+   body>section>div>p{
+       position: absolute;
+       font-size: 25px;
+       color:white;
+       text-align: center;
+       padding-top: 100px;
+       top:0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       margin: auto;
+
+   }
+   section{
+       position: relative;
+       height: 100vh;
+   }
+   body>section:nth-child(3)>div{
+       background-color: dodgerblue;
+   }
+   body>section:nth-child(4)>div{
+       background-color: deeppink;
+   }
+
+  </style>
+</head>
+<body>
+<div>
+  <div></div>
+</div>
+
+<section>
+    <div><p>Hello</p></div>
+</section>
+<section>
+    <div><p>Welcome to</p></div>
+</section>
+<section>
+    <div><p>Institute of Software Engineering</p></div>
+</section>
+</body>
+</html>
