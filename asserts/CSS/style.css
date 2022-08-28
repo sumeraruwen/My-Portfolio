@@ -93,7 +93,7 @@ main>section:nth-child(1)>aside>button{
 
 main>section:nth-child(2)>div{
     width: 80%;
-    height: 80vh;
+    height: 85vh;
     background-color: white;
     position: relative;
     top: 0;
@@ -104,6 +104,7 @@ main>section:nth-child(2)>div{
     margin-top: 80px;
     margin-bottom: 50px;
     box-shadow: 1px 2px 3px 1px rgba(40, 0, 0, 0.40);
+
 
     /*background-color: white;
     padding-top: 4rem;
