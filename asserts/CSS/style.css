@@ -202,3 +202,8 @@ main>section:nth-child(5)>section:nth-child(2)>div{
     text-align: center;
 
 }
+main>section:nth-child(5)>section:nth-child(2)>div>p{
+    margin-top: 190px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
