@@ -149,7 +149,7 @@ main>section:nth-child(3)>section:nth-child(2)>div{
     text-align: center;
 
 }
-main>section:nth-child(3)>section:nth-child(2)>div:nth-child(1)>div{
+main>section:nth-child(3)>section:nth-child(2)>div>div{
     width: 130px;
     height: 130px;
     background-color: dodgerblue;
@@ -173,6 +173,7 @@ main>section:nth-child(3)>section:nth-child(2)>div>div>div{
     bottom: 0;
     right: 0;
     left: 10px;
+
 
 
 }
