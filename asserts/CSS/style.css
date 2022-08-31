@@ -147,15 +147,18 @@ main>section:nth-child(3)>section:nth-child(2)>div{
     text-align: center;
 
 }
-/*
-main>section:nth-child(3)>section:nth-child(2)>div:nth-child(1)>h4{
-    margin-top: 50px;
+main>section:nth-child(3)>section:nth-child(2)>div>div{
+  width: 120px;
+    height: 120px;
+    background-color: dodgerblue;
+    margin-top:30px;
+    border-radius: 100%;
+    margin-left: 130px;
 
 }
-*/
 
 main>section:nth-child(3)>section:nth-child(2)>div>p{
-margin-top: 190px;
+/*margin-top: 190px;*/
     margin-left: 20px;
     margin-right: 20px;
 }
