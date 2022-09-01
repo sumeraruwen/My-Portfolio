@@ -162,6 +162,11 @@ main>section:nth-child(3)>section:nth-child(2)>div>div{
 
 
 }
+
+main>section:nth-child(3)>section:nth-child(2)>div>div:hover{
+   background-color: #e4e4e4;
+}
+
 main>section:nth-child(3)>section:nth-child(2)>div>div>div{
     width: 110px;
     height: 110px;
@@ -175,6 +180,10 @@ main>section:nth-child(3)>section:nth-child(2)>div>div>div{
     left: 10px;
 
 
+
+}
+main>section:nth-child(3)>section:nth-child(2)>div>div>div:hover{
+        background-color: dodgerblue;
 
 }
 
