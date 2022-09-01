@@ -187,6 +187,21 @@ main>section:nth-child(3)>section:nth-child(2)>div>div>div:hover{
 
 }
 
+main>section:nth-child(3)>section:nth-child(2)>div>div>div>i{
+    font-size: 50px;
+    position: relative;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+main>section:nth-child(3)>section:nth-child(2)>div>div>div>i:hover{
+    color: white;
+
+}
+
 main>section:nth-child(3)>section:nth-child(2)>div>p{
 /*margin-top: 190px;*/
     margin-left: 20px;
