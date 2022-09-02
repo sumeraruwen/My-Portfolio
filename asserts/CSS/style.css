@@ -149,6 +149,21 @@ main>section:nth-child(3)>section:nth-child(2)>div{
     text-align: center;
 
 }
+
+main>section:nth-child(3)>section:nth-child(2)>div:hover>div{
+    background-color: #e4e4e4;
+    transition-duration: 0.3s;
+
+}
+main>section:nth-child(3)>section:nth-child(2)>div:hover>div>div{
+    background-color: dodgerblue;
+    transition-duration: 0.3s;
+}
+main>section:nth-child(3)>section:nth-child(2)>div:hover>div>div>i{
+    color: white;
+    transition-duration: 0.3s;
+}
+
 main>section:nth-child(3)>section:nth-child(2)>div>div{
     width: 130px;
     height: 130px;
@@ -163,9 +178,6 @@ main>section:nth-child(3)>section:nth-child(2)>div>div{
 
 }
 
-main>section:nth-child(3)>section:nth-child(2)>div>div:hover{
-   background-color: #e4e4e4;
-}
 
 main>section:nth-child(3)>section:nth-child(2)>div>div>div{
     width: 110px;
@@ -182,10 +194,7 @@ main>section:nth-child(3)>section:nth-child(2)>div>div>div{
 
 
 }
-main>section:nth-child(3)>section:nth-child(2)>div>div>div:hover{
-        background-color: dodgerblue;
 
-}
 
 main>section:nth-child(3)>section:nth-child(2)>div>div>div>i{
     font-size: 50px;
@@ -197,10 +206,6 @@ main>section:nth-child(3)>section:nth-child(2)>div>div>div>i{
 
 }
 
-main>section:nth-child(3)>section:nth-child(2)>div>div>div>i:hover{
-    color: white;
-
-}
 
 main>section:nth-child(3)>section:nth-child(2)>div>p{
 /*margin-top: 190px;*/
@@ -315,6 +320,15 @@ main>section:nth-child(6)>section:nth-child(2)>div:nth-child(1)>div{
     background: url("../images/WhatsApp Image 2022-07-17 at 10.03.12 AM.jpeg");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+
+}
+main>section:nth-child(6)>section:nth-child(2)>div:nth-child(1)>div:hover{
+   transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.5s ease;
+    overflow: hidden;
+
 }
 
 main>section:nth-child(6)>section:nth-child(2)>div:nth-child(2)>div{
