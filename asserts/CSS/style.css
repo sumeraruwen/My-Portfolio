@@ -111,9 +111,21 @@ main>section:nth-child(2)>div{
     padding-bottom: 4rem;
     margin-bottom: 2rem;*/
 
+}
 
+main>section:nth-child(2)>div>div{
+   width: 200px;
+    height: 200px;
+    background-color: gray;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+main>section:nth-child(2)>div>aside:nth-child(1)>p{
+  text-align: left;
 
 }
+
 
 /*===============================
           Services Section
@@ -380,6 +392,24 @@ main>section:nth-child(7)>section>div{
 
 }
 
+main>section:nth-child(7)>section>div>aside:nth-child(1)>h2{
+position: relative;
+  font-size: 30px;
+    margin-left: 50px;
+
+
+}
+
+main>section:nth-child(7)>section>div>aside:nth-child(1)>form>input{
+    position: relative;
+    margin-left: 50px;
+    width: 400px;
+    height: 30px;
+    display: grid;
+
+
+
+}
 
 /*===============================
           Footer Section
