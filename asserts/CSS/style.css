@@ -405,9 +405,15 @@ main>section:nth-child(7)>section>div>aside:nth-child(1)>form>input{
     margin-left: 50px;
     width: 400px;
     height: 30px;
+display: grid;
+
+}
+main>section:nth-child(7)>section>div>aside:nth-child(1)>form>textarea{
+    position: relative;
+    margin-left: 50px;
+    width: 400px;
+    height: 120px;
     display: grid;
-
-
 
 }
 
