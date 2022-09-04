@@ -452,6 +452,10 @@ main>section:nth-child(7)>section>div>aside:nth-child(2)>p{
 
 
 }
+main>section:nth-child(7)>section>div>aside:nth-child(2)>p>span>i{
+  color: dodgerblue;
+
+}
 /*===============================
           Footer Section
 ===============================*/
