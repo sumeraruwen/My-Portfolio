@@ -233,7 +233,9 @@ main>section:nth-child(4){
     margin-top: 60px;
     width: 100%;
     height: 58vh;
-    display: grid;
+  /*  display: grid;*/
+    display: flex;
+    justify-content: space-around;
     grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(4,1fr);
 
@@ -241,7 +243,7 @@ main>section:nth-child(4){
     background-size: cover;
     background-position: center;
     background-color: dodgerblue;
-    z-index: 2;
+
 
 }
 
@@ -250,14 +252,40 @@ main>section:nth-child(4)>div{
     height: 80px;
     border: 13px solid white;
     border-radius: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
-    gap: 30px;
+
 }
+main>section:nth-child(4)>div:nth-child(2){
+  right: 850px;
+}
+
+main>section:nth-child(4)>div:nth-child(3){
+    left: 300px;
+}
+main>section:nth-child(4)>div:nth-child(1){
+    right: 260px;
+}
+
+main>section:nth-child(4)>div:nth-child(4){
+    left: 850px;
+}
+
+/*
+main>section:nth-child(4)>div:nth-child(2){
+    left: 150px;
+}
+main>section:nth-child(4)>div:nth-child(3){
+    right: 150px;
+}
+main>section:nth-child(4)>div:nth-child(4){
+    right: 150px;
+}
+*/
 
 /*===============================
           product Section
