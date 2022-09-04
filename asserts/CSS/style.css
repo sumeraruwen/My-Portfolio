@@ -275,6 +275,37 @@ main>section:nth-child(4)>div:nth-child(4){
     left: 850px;
 }
 
+main>section:nth-child(4)>div>i{
+    font-size: 35px;
+    position: relative;
+    top: 22px;
+    bottom: 0;
+    right: 0;
+    left: 25px;
+    margin: auto;
+    color: white;
+}
+main>section:nth-child(4)>div>p:nth-child(1){
+    font-size: 35px;
+    position: relative;
+    top: 75px;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    margin: auto;
+    color: white;
+}
+/*main>section:nth-child(4)>div>p:nth-child(2){
+    font-size: 15px;
+    position: relative;
+    top: 85px;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    margin: auto;
+    color: white;
+}*/
+
 /*
 main>section:nth-child(4)>div:nth-child(2){
     left: 150px;
