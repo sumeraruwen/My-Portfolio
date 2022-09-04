@@ -456,6 +456,20 @@ main>section:nth-child(7)>section>div>aside:nth-child(2)>p>span>i{
   color: dodgerblue;
 
 }
+
+main>section:nth-child(7)>section>div>aside:nth-child(2)>div{
+    width: 40px;
+    height: 40px;
+    background-color: dodgerblue;
+    position: relative;
+    display: inline-block;
+    top: 30px;
+    right: 80px;
+    border-radius: 100%;
+    margin-left: 30px;
+
+}
+
 /*===============================
           Footer Section
 ===============================*/
