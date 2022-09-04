@@ -506,6 +506,10 @@ main>section:nth-child(7)>section>div>aside:nth-child(2)>div:hover>div>i{
     transition-duration: 0.3s;
     color: white;
 }
+main>section:nth-child(7)>section>div>aside:nth-child(1)>form>button:hover{
+   background-color: mediumblue;
+    transition-duration: 0.3s;
+}
 
 /*===============================
           Footer Section
