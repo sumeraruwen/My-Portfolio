@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+  <style>
+    body>div{
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      border: 3px solid red;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      animation-name: my-animation;
+        animation-duration:0.9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+    @keyframes my-animation {
+      0%{
+          width: 20px;
+          height: 20px;
+      }
+      100%{
+          width: 200px;
+          height: 200px;
+          opacity: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div></div>
+
+</body>
+</html>
