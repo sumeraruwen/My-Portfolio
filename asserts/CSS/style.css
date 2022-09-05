@@ -131,8 +131,9 @@ main>section:nth-child(2)>div>div{
 }
 main>section:nth-child(2)>div>section:nth-child(2)>p{
     position: relative;
-    top: 50px;
+    top: 60px;
     left:300px;
+
 }
 main>section:nth-child(2)>div>section:nth-child(3)>p{
     position: relative;
