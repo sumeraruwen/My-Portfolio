@@ -132,13 +132,23 @@ main>section:nth-child(2)>div>div{
 main>section:nth-child(2)>div>section:nth-child(2)>p{
     position: relative;
     top: 50px;
-    left:320px;
+    left:300px;
 }
 main>section:nth-child(2)>div>section:nth-child(3)>p{
-    position: absolute;
-
-    left: 580px;
+    position: relative;
+    font-size: 20px;
+    left: 10px;
+    margin-right: 100px;
+    top: 30px;
 }
+main>section:nth-child(2)>div>section:nth-child(3)>h3{
+    position: relative;
+   font-size: 35px;
+    left: 10px;
+    top: 20px;
+}
+
+
 /*main>section:nth-child(2)>div>aside:nth-child(1)>p{
   text-align: right;
 
