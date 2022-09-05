@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 3</title>
+  <style>
+    body>main{
+      width: 900px;
+      height: 480px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+        overflow: hidden;
+
+     /* background: url("../../../../asserts/images/3.jpg");
+      background-size: cover;
+      background-position: center;*/
+
+    }
+    main > section {
+        height: 100%;
+        width: 400%;
+        display: flex;
+        animation-name: my-animation;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+        animation-timing-function: linear;
+
+    }
+    main > section > div {
+        height: 100%;
+        width: 100%;
+    }
+
+    main>section>div:nth-child(1){
+        background: url("../../../../asserts/images/3.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main>section>div:nth-child(2){
+        background: url("../../../../asserts/images/6.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main>section>div:nth-child(3){
+        background: url("../../../../asserts/images/1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main>section>div:nth-child(4){
+        background: url("../../../../asserts/images/sad.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    @keyframes my-animation {
+        0%,15%{
+          transform: translateX(0);
+
+        }
+        25%,35%{
+            transform: translateX(-25%);
+        }
+        50%,75%{
+            transform: translateX(-50%);
+        }
+        80%,100%{
+            transform: translateX(-75%);
+        }
+    }
+
+  </style>
+</head>
+<body>
+<main>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+</main>
+
+</body>
+</html>
