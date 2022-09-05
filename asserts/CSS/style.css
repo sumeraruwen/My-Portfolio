@@ -1,6 +1,9 @@
 body{
     background-color: #EAEAEA;
 }
+/*main{
+    overflow: hidden;
+}*/
 
 /*===============================
           Header Nav Bar
@@ -106,6 +109,11 @@ main>section:nth-child(2)>div{
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.40);
 
 
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+
+
     /*background-color: white;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -117,14 +125,24 @@ main>section:nth-child(2)>div>div{
    width: 200px;
     height: 200px;
     background-color: gray;
-    position: relative;
+    position: absolute;
     left: 50px;
     top: 50px;
 }
-main>section:nth-child(2)>div>aside:nth-child(1)>p{
-  text-align: left;
-
+main>section:nth-child(2)>div>section:nth-child(2)>p{
+    position: relative;
+    top: 50px;
+    left:320px;
 }
+main>section:nth-child(2)>div>section:nth-child(3)>p{
+    position: absolute;
+
+    left: 580px;
+}
+/*main>section:nth-child(2)>div>aside:nth-child(1)>p{
+  text-align: right;
+
+}*/
 
 
 /*===============================
@@ -585,6 +603,10 @@ main>section:nth-child(7)>section>div>aside:nth-child(2)>div:hover>div>i{
 main>section:nth-child(7)>section>div>aside:nth-child(1)>form>button:hover{
    background-color: mediumblue;
     transition-duration: 0.3s;
+}
+main>section:nth-child(7)>section>div>aside:nth-child(2)>div:nth-child(1)>div>i{
+    position: relative;
+    left: 20px;
 }
 
 /*===============================
