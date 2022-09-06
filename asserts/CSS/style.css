@@ -148,6 +148,10 @@ main>section:nth-child(2)>div>section:nth-child(2)>section>div:nth-child(2){
     background-color: darkblue;
     left:60px;
     top:180px;
+
+    background: url("../images/icons8-html-5-48.png");
+    background-size: cover;
+    background-position: center;
 }
 main>section:nth-child(2)>div>section:nth-child(3)>p{
     position: relative;
