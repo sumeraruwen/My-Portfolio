@@ -135,6 +135,12 @@ main>section:nth-child(2)>div>section:nth-child(2)>p{
     left:300px;
 
 }
+main>section:nth-child(2)>div>section:nth-child(2)>section>h4{
+    position: absolute;
+   font-size: 27px;
+    left:60px;
+    top: 250px;
+}
 main>section:nth-child(2)>div>section:nth-child(3)>p{
     position: relative;
     font-size: 20px;
@@ -148,6 +154,7 @@ main>section:nth-child(2)>div>section:nth-child(3)>h3{
     left: 10px;
     top: 20px;
 }
+
 
 
 /*main>section:nth-child(2)>div>aside:nth-child(1)>p{
