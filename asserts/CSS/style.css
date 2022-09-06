@@ -127,7 +127,7 @@ main>section:nth-child(2)>div>div{
     background-color: gray;
     position: absolute;
     left: 50px;
-    top: 50px;
+    top: 60px;
 }
 main>section:nth-child(2)>div>section:nth-child(2)>p{
     position: relative;
@@ -139,7 +139,15 @@ main>section:nth-child(2)>div>section:nth-child(2)>section>h4{
     position: absolute;
    font-size: 27px;
     left:60px;
-    top: 250px;
+    top: 270px;
+}
+main>section:nth-child(2)>div>section:nth-child(2)>section>div:nth-child(2){
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: darkblue;
+    left:60px;
+    top:180px;
 }
 main>section:nth-child(2)>div>section:nth-child(3)>p{
     position: relative;
