@@ -541,10 +541,14 @@ main>section:nth-child(5)>section:nth-child(2)>div:nth-child(3)>div{
 
 }
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(4)>div{
+    background: url("../images/css1.1.PNG");
+    background-size: cover;
+    background-position: center;
+
 
 }
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(5)>div{
-    background: url("../images/css1.1.PNG");
+    background: url("../images/css6.PNG");
     background-size: cover;
     background-position: center;
 }
