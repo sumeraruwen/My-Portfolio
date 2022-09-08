@@ -806,9 +806,6 @@ footer{
 ===============================*/
 
 @media all and (min-width: 1440px) {
-    header>section>nav>ul:nth-child(1)>li{
-       color: #ff253a;
-    }
 
     main>section:nth-child(4){
         margin-top: 90px;
