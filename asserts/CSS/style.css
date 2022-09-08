@@ -113,12 +113,6 @@ main>section:nth-child(2)>div{
     grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(2,1fr);
 
-
-    /*background-color: white;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin-bottom: 2rem;*/
-
 }
 
 main>section:nth-child(2)>div>div{
@@ -836,5 +830,39 @@ footer{
        position: relative;
         left: 80px;
     }
+
+   /* About*/
+
+    main>section:nth-child(2)>div{
+        width: 90%;
+        height: 90vh;
+        margin-top: 80px;
+        margin-bottom: 50px;
+
+    }
+    main>section:nth-child(2)>div>section:nth-child(2)>p{
+        position: relative;
+        top: 60px;
+        left:250px;
+
+    }
+    main>section:nth-child(2)>div>div{
+        width: 180px;
+        height: 180px;
+        left: 50px;
+        top: 70px;
+    }
+
+    main>section:nth-child(2)>div>section:nth-child(3)>p{
+        left: 40px;
+        margin-right: 80px;
+        top: 5px;
+    }
+    main>section:nth-child(2)>div>section:nth-child(3)>h3{
+        left: 40px;
+        top: 15px;
+    }
+
+
 
 }
