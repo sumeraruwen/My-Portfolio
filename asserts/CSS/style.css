@@ -864,6 +864,17 @@ footer{
         top: 15px;
     }
 
+    /*Service*/
+
+    main>section:nth-child(3)>section:nth-child(2){
+        width: 90%;
+
+    }
+
+    main>section:nth-child(3)>section:nth-child(2)>div>div{
+        left: 75px;
+
+    }
 
 
 }
