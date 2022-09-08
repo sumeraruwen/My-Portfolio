@@ -805,7 +805,7 @@ footer{
          Responsive Laptop L
 ===============================*/
 
-@media all and (min-width: 1440px) {
+@media all and (max-width: 1440px) {
 
     main>section:nth-child(4){
         margin-top: 90px;
@@ -815,6 +815,26 @@ footer{
 
     main>section:nth-child(7)>section>div{
         left: 190px;
+    }
+
+}
+
+/*===============================
+         Responsive Laptop S
+===============================*/
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+
+    /*header*/
+
+    header>section>nav>ul:nth-child(1)>li{
+      right: 60px;
+      position: relative;
+    }
+
+    header>section>nav>ul:nth-child(2)>li{
+       position: relative;
+        left: 80px;
     }
 
 }
