@@ -38,6 +38,7 @@
         background-size: cover;
         background-position: center;
 
+
     }
 
     body>main>section>div:nth-child(2){
@@ -92,6 +93,12 @@
         background-size: cover;
         background-position: center;
 
+        animation-name: my-animation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        animation-timing-function: linear;
+
     }
 
     body>main>section>div:nth-child(6){
@@ -110,8 +117,39 @@
         background-size: cover;
         background-position: center;
 
+        animation-name: my-animation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        animation-timing-function: linear;
+
 
     }
+
+    @keyframes my-animation {
+        0%,15%{
+            transform: rotate(90deg);
+
+        }
+        15%,30%{
+            transform: rotate(60deg);
+
+        }
+        30%,45%{
+            transform: rotate(30deg);
+
+        }
+        45%,60%{
+            transform: rotate(-30deg);
+
+        }
+        60%,75%{
+            transform: rotate(-80deg);
+
+        }
+
+    }
+
 
 
   </style>
