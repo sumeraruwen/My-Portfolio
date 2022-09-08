@@ -865,16 +865,20 @@ footer{
     }
 
     /*Service*/
-
     main>section:nth-child(3)>section:nth-child(2){
         width: 90%;
 
     }
-
     main>section:nth-child(3)>section:nth-child(2)>div>div{
         left: 75px;
-
     }
+
+   /* Counting*/
+
+    main>section:nth-child(4){
+        margin-top: 140px;
+    }
+
 
 
 }
