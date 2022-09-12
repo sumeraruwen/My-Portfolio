@@ -885,5 +885,8 @@ footer{
 
     /* Projects*/
 
+    main>section:nth-child(5)>section:nth-child(2){
+        width: 90%;
 
+    }
 }
