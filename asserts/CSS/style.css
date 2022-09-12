@@ -889,4 +889,10 @@ footer{
         width: 90%;
 
     }
+
+    /* Portfolio*/
+
+    main>section:nth-child(6)>section:nth-child(2){
+        width: 90%;
+    }
 }
