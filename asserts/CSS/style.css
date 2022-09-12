@@ -1,9 +1,9 @@
 body{
     background-color: #EAEAEA;
 }
-/*main{
+main{
     overflow: hidden;
-}*/
+}
 
 /*===============================
           Header Nav Bar
@@ -13,8 +13,9 @@ header{
     background-color: black;
     height: 80px;
     font-family: 'Poppins', sans-serif;
-    position: relative;
+    position: absolute;
     top: 0;
+
 
 }
 
@@ -23,12 +24,14 @@ header>section>nav>ul:nth-child(1){
     top: 0px;
     left: 70px;
     cursor: pointer;
+
 }
 header>section>nav>ul:nth-child(2){
     position: absolute;
     top: 0px;
     right: 150px;
     cursor: pointer;
+
 }
 header>section>nav>ul:nth-child(1)>li{
     display: inline-block;
@@ -879,6 +882,8 @@ footer{
         margin-top: 140px;
     }
 
+
+    /* Projects*/
 
 
 }
