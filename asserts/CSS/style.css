@@ -880,6 +880,7 @@ footer{
 
     main>section:nth-child(4){
         margin-top: 140px;
+
     }
 
 
@@ -887,12 +888,26 @@ footer{
 
     main>section:nth-child(5)>section:nth-child(2){
         width: 90%;
-
     }
 
     /* Portfolio*/
 
     main>section:nth-child(6)>section:nth-child(2){
         width: 90%;
+    }
+
+    /* Contact */
+
+    main>section:nth-child(7){
+        margin-top: 120px;
+
+    }
+
+    main>section:nth-child(7)>section>div{
+        margin-top: 120px;
+        position: absolute;
+        left: 60px;
+        width: 900px;
+        height: 600px;
     }
 }
