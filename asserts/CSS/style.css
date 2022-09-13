@@ -1064,21 +1064,21 @@ footer{
 
         }
         main>section:nth-child(4)>div:nth-child(2){
-            top: 250px;
+            top: 170px;
             right: 600px;
         }
 
         main>section:nth-child(4)>div:nth-child(3){
-            top: 250px;
+            top: 170px;
             left: 180px;
         }
         main>section:nth-child(4)>div:nth-child(1){
-            top: 250px;
+            top: 170px;
             right: 220px;
         }
 
         main>section:nth-child(4)>div:nth-child(4){
-            top: 250px;
+            top: 170px;
             left: 550px;
         }
 
@@ -1086,29 +1086,21 @@ footer{
             font-size: 30px;
             position: relative;
             top: 15px;
-            bottom: 0;
-            right: 0;
             left: 18px;
-            margin: auto;
-            color: white;
+
         }
         main>section:nth-child(4)>div>h3{
             font-size: 35px;
             position: relative;
             top: 58px;
-            bottom: 0;
-            right: 0;
             left: 20px;
-            margin: auto;
-            color: white;
         }
         main>section:nth-child(4)>div>p{
             width: 300px;
             font-size:14px;
-            position: relative;
             top: 40px;
             right: 20px;
-            color: white;
+
         }
         main>section:nth-child(4)>div:nth-child(2)>p{
             right: 25px;
@@ -1123,6 +1115,65 @@ footer{
 
         main>section:nth-child(4)>div:nth-child(4)>p{
             right: 5px;
+        }
+
+        /* Contact */
+
+        main>section:nth-child(7){
+            margin-top: 220px;
+
+        }
+
+        main>section:nth-child(7)>section>div{
+            margin-top: 120px;
+            position: absolute;
+            left: 30px;
+            width: 700px;
+            height: 600px;
+        }
+
+        main>section:nth-child(7)>section>div>aside:nth-child(1)>form>input{
+            position: relative;
+            margin-left: 50px;
+            width: 280px;
+            height: 30px;
+            top: 20px;
+
+        }
+        main>section:nth-child(7)>section>div>aside:nth-child(1)>form>textarea{
+            position: relative;
+            margin-left: 50px;
+            width: 280px;
+            height: 150px;
+            top: 20px;
+
+        }
+
+        main>section:nth-child(7)>section>div>aside:nth-child(2)>div{
+            width: 50px;
+            height: 50px;
+            background-color: dodgerblue;
+            position: relative;
+            display: inline-block;
+            top: 30px;
+            right: 60px;
+            border-radius: 100%;
+            margin-left: 8px;
+
+        }
+
+        main>section:nth-child(7)>section>div>aside:nth-child(2)>div>div{
+            width: 42px;
+            height: 42px;
+            background-color: white;
+            position: relative;
+            top: 3.5px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 100%;
+
         }
 
 
