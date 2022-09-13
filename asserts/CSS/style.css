@@ -802,7 +802,7 @@ footer{
          Responsive Laptop L
 ===============================*/
 
-@media all and (max-width: 1440px) {
+@media  (max-width: 1440px) {
 
     main>section:nth-child(4){
         margin-top: 90px;
@@ -820,7 +820,8 @@ footer{
          Responsive Laptop S
 ===============================*/
 
-@media all and (min-width: 1024px) and (max-width: 1439px){
+/*@media all and (min-width: 1024px) and (max-width: 1439px){*/
+@media (max-width: 1231px) {
 
     /*header*/
 
@@ -909,5 +910,61 @@ footer{
         left: 60px;
         width: 900px;
         height: 600px;
+    }
+
+/*===============================
+         Responsive Tab
+===============================*/
+
+    @media  (max-width: 1179px){
+
+        header>section>nav>ul:nth-child(1)>li{
+            color: red;
+        }
+
+
+    }
+
+
+    @media  (max-width: 1024px){
+
+        header>section>nav>ul:nth-child(1)>li{
+            color: blue;
+        }
+
+
+    }
+
+    @media  (max-width: 996px){
+
+        header>section>nav>ul:nth-child(1)>li{
+            color: green;
+        }
+
+
+    }
+
+    @media  (max-width: 845px){
+
+        header>section>nav>ul:nth-child(1)>li{
+            color: orange;
+        }
+
+
+    }
+
+    /*Responsive Tab*/
+
+    @media  (max-width: 768px){
+
+        header>section>nav>ul:nth-child(1)>li{
+          right: 90px;
+
+        }
+        header>section>nav>ul:nth-child(2)>li{
+            left: 110px;
+
+        }
+
     }
 }
