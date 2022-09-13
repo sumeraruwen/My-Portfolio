@@ -1046,9 +1046,86 @@ footer{
         /* Counting*/
 
         main>section:nth-child(4){
-            margin-top: 250px;
+            margin-top: 280px;
 
         }
+
+        main>section:nth-child(4)>div{
+            width: 60px;
+            height: 60px;
+            border: 11px solid white;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+        main>section:nth-child(4)>div:nth-child(2){
+            top: 250px;
+            right: 600px;
+        }
+
+        main>section:nth-child(4)>div:nth-child(3){
+            top: 250px;
+            left: 180px;
+        }
+        main>section:nth-child(4)>div:nth-child(1){
+            top: 250px;
+            right: 220px;
+        }
+
+        main>section:nth-child(4)>div:nth-child(4){
+            top: 250px;
+            left: 550px;
+        }
+
+        main>section:nth-child(4)>div>i{
+            font-size: 30px;
+            position: relative;
+            top: 15px;
+            bottom: 0;
+            right: 0;
+            left: 18px;
+            margin: auto;
+            color: white;
+        }
+        main>section:nth-child(4)>div>h3{
+            font-size: 35px;
+            position: relative;
+            top: 58px;
+            bottom: 0;
+            right: 0;
+            left: 20px;
+            margin: auto;
+            color: white;
+        }
+        main>section:nth-child(4)>div>p{
+            width: 300px;
+            font-size:14px;
+            position: relative;
+            top: 40px;
+            right: 20px;
+            color: white;
+        }
+        main>section:nth-child(4)>div:nth-child(2)>p{
+            right: 25px;
+        }
+
+        main>section:nth-child(4)>div:nth-child(3)>p{
+
+        }
+        main>section:nth-child(4)>div:nth-child(1)>p{
+            right: 38px;
+        }
+
+        main>section:nth-child(4)>div:nth-child(4)>p{
+            right: 5px;
+        }
+
+
 
     }
 }
