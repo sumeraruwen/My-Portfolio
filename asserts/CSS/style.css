@@ -953,7 +953,9 @@ footer{
 
     }
 
-    /*Responsive Tab*/
+/*===============================
+             Responsive Tab
+ ===============================*/
 
     @media  (max-width: 768px){
 
@@ -1033,6 +1035,19 @@ footer{
         }
         main>section:nth-child(2)>div>section:nth-child(2)>section>div:nth-child(12){
             left:310px;
+        }
+
+       /* Services*/
+
+        main>section:nth-child(3)>section:nth-child(2)>div>div{
+            left: 40px;
+        }
+
+        /* Counting*/
+
+        main>section:nth-child(4){
+            margin-top: 250px;
+
         }
 
     }
