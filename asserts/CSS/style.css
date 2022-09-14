@@ -1318,7 +1318,7 @@ footer{
 
         main>section:nth-child(4){
             margin-top: 1500px;
-            height: 1100px;
+            height: 900px;
 
         }
         main>section:nth-child(4)>div{
@@ -1335,21 +1335,21 @@ footer{
 
         }
         main>section:nth-child(4)>div:nth-child(2){
-            top: 1200px;
+            top: -1400px;
            left: 170px;
         }
 
         main>section:nth-child(4)>div:nth-child(3){
-            top: 1600px;
+            top: -200px;
             left: 0px;
         }
         main>section:nth-child(4)>div:nth-child(1){
-            top: 2000px;
+            top: -1000px;
             right: 0px;
         }
 
         main>section:nth-child(4)>div:nth-child(4){
-            top: 2400px;
+            top: -600px;
             left: 0px;
         }
         main>section:nth-child(4)>div>i{
