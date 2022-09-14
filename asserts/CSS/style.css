@@ -1305,23 +1305,70 @@ footer{
         main>section:nth-child(3)>section:nth-child(2){
             width: 90%;
             height: 100vh;
-            left: 0;
-            right: 0;
-            top: 50px;
-            margin: auto;
             grid-template-rows: repeat(6,1fr);
             grid-template-columns: repeat(1,1fr);
             gap: 30px;
-
-
         }
 
         main>section:nth-child(3)>section:nth-child(2)>div>div{
             left: 130px;
         }
 
+        /* Counting*/
+
+        main>section:nth-child(4){
+            margin-top: 1500px;
+            height: 1100px;
+
+        }
+        main>section:nth-child(4)>div{
+            width: 65px;
+            height: 65px;
+            border: 11px solid white;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+        main>section:nth-child(4)>div:nth-child(2){
+            top: 1200px;
+           left: 170px;
+        }
+
+        main>section:nth-child(4)>div:nth-child(3){
+            top: 1600px;
+            left: 0px;
+        }
+        main>section:nth-child(4)>div:nth-child(1){
+            top: 2000px;
+            right: 0px;
+        }
+
+        main>section:nth-child(4)>div:nth-child(4){
+            top: 2400px;
+            left: 0px;
+        }
+        main>section:nth-child(4)>div>i{
+            font-size: 30px;
+            position: relative;
+            top: 17px;
+            bottom: 0;
+            right: 0;
+            left: 20px;
+            margin: auto;
+            color: white;
+        }
+
+
+
 
     }
+
+
     @media  (max-width: 375px){
 
         header>section>nav>ul:nth-child(1)>li{
