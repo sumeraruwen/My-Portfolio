@@ -1179,7 +1179,7 @@ footer{
     }
 
 /*===============================
-             Responsive Mobile L
+         Responsive Mobile L
 ===============================*/
 
     @media  (max-width: 508px){
@@ -1399,14 +1399,6 @@ footer{
             margin-top: 1000px;
             width: 100%;
             height: 1300px;
-
-            /* background-image: url("../images/3.jpg");*/
-            background-size: cover;
-            background-position: center;
-            background-color: dodgerblue;
-
-
-
         }
 
         main>section:nth-child(7)>section>div{
@@ -1480,12 +1472,101 @@ footer{
     }
 
 
-    @media  (max-width: 375px){
+/*===============================
+      Responsive Mobile S
+===============================*/
+
+    @media  (max-width: 320px){
+
+        /*header*/
 
         header>section>nav>ul:nth-child(1)>li{
             color: red;
+        }
+
+        header>section>nav>ul:nth-child(2)>li{
+            display: none;
+        }
+
+        /*  home*/
+
+        main>section:nth-child(1)>aside>h2{
+            top: 210px;
+            font-size: 43px;
+            text-align: center;
+        }
+        main>section:nth-child(1)>aside>p{
+            top: 350px;
+            left:55px;
+            font-size: 25px;
+        }
+        main>section:nth-child(1)>aside>button{
+            top: 440px;
+            left: 40px;
+            height: 40px;
+            width: 120px;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+
+        /* Services*/
+
+        main>section:nth-child(3)>section:nth-child(2)>div>div{
+            left: 80px;
+        }
+
+        /* Counting*/
+
+        main>section:nth-child(4){
+            margin-top: 1700px;
+            height: 900px;
 
         }
+        main>section:nth-child(4)>div:nth-child(2){
+            top: -1400px;
+            left: 110px;
+        }
+
+
+        /* Contact */
+
+        main>section:nth-child(7){
+            margin-top: 1100px;
+            width: 100%;
+            height: 1300px;
+        }
+
+
+        main>section:nth-child(7)>section>div{
+            margin-top: 120px;
+            width: 280px;
+            height: 1100px;
+        }
+
+
+        main>section:nth-child(7)>section>div>aside:nth-child(1)>form>input{
+            margin-left: 20px;
+            width: 240px;
+
+        }
+        main>section:nth-child(7)>section>div>aside:nth-child(1)>form>textarea{
+            width: 240px;
+        }
+
+        main>section:nth-child(7)>section>div>aside:nth-child(2)>p{
+            position: relative;
+            top: 30px;
+            left: 10px;
+            width: 260px;
+        }
+        main>section:nth-child(7)>section>div>aside:nth-child(2)>div{
+            width: 50px;
+            height: 50px;
+            top: 30px;
+            left: 10px;
+            margin-left: 5px;
+        }
+
 
     }
 }
