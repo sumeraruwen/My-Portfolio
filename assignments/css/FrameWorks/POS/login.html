@@ -3,8 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>POS Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../asserts/CSS/style.css">
+    <link rel="stylesheet" href="../../../../asserts/CSS/normalize.css">
+    <link rel="stylesheet" href="../../../../asserts/fonts/css/all.min.css">
+
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="../../../../asserts/CSS/bootstrap.min.css">
+
+    <style>
+        .card{
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 0;
+            margin: auto;
+            position: relative;
+            height: 450px;
+        }
+
+
+
+    </style>
 </head>
 <body>
 
+<div class="card" style="width: 25rem;">
+    <img src="" class="card-img-top" alt="...">
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-danger">LOGIN</button>
+        </form>
+    </div>
+</div>
+
+
+<!--Import js for Bootstrap-->
+<script src="../../../../asserts/js/bootstrap.min.js"></script>
 </body>
 </html>
