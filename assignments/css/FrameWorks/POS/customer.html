@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="../../../../asserts/CSS/bootstrap.min.css">
 
   <style>
+      main>table{
+          background-color:#EAEAEA;
+      }
    section:nth-child(1){
       height: 100px;
 
@@ -21,6 +24,9 @@
 
    section:nth-child(2){
        height: 50px;
+   }
+   section:nth-child(2)>div{
+       margin-top: 120px;
    }
    section:nth-child(3){
        height: 500px;
@@ -66,68 +72,26 @@
   </div>
 </nav>
 
-<!--<section>
-  <div class="container text-center">
-    <div class="row align-items-start">
-      <div class="col">
-        Customer
-      </div>
-      <div class="col">
-        One of three columns
-      </div>
-      <div class="col">
-        One of three columns
-      </div>
-    </div>
-  </div>
-</section>-->
+
 <!--
-<div class="container-fluid w-50">
-  <form class="d-flex flex-column flex-lg-row" role="search">
-    <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
-           aria-label="Search">
-    <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown button
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-    <button class="btn btn-outline-success" type="submit">Search</button>
-  </form>
-
-</div>
-
-<div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
--->
-
 <h2>Customer</h2>
+-->
 
 
 <main class="container">
+    <table class="table table-bordered table-hover">
+        <thead class="bg-white text-black">
+        <tr>
+            <th>Customers</th>
+        </tr>
+        </thead>
+        <tbdoy>
+            <tr>
+                <td>
 
     <section class="row">
       <div class="col">
-          <table class="table table-bordered table-hover">
+          <table class="table table-bordered table-hover bg-white">
               <thead class="bg-success text-white">
               <tr>
                   <th>Customer Search</th>
@@ -141,7 +105,7 @@
                                      aria-label="Search">
                           </form>
                           <br>
-                          <button class="btn btn-success dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                          <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
                                   data-bs-toggle="dropdown" aria-expanded="false">
                               Name
                           </button>
@@ -158,7 +122,50 @@
           </table>
         </div>
       <div class="col">
-          <button type="button" class="btn btn-info">New Customer</button>
+          <!--<button type="button" class="btn btn-info">New Customer</button>-->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              New Customer
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header bg-success">
+                          <h5 class="modal-title" id="exampleModalLabel">New Customer</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <!--  ...-->
+                          <form>
+                              <div class="mb-3">
+                                  <label for="exampleInputCusID" class="form-label">Customer ID</label>
+                                  <input type="email" class="form-control" id="exampleInputCusID" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="exampleInputCusName" class="form-label">Customer Name</label>
+                                  <input type="password" class="form-control" id="exampleInputCusName">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="exampleInputCusAddress" class="form-label">Customer Address</label>
+                                  <input type="password" class="form-control" id="exampleInputCusAddress">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="exampleInputCusSalary" class="form-label">Customer Salary</label>
+                                  <input type="password" class="form-control" id="exampleInputCusSalary">
+                              </div>
+
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-danger">Save</button>
+                          <button type="button" class="btn btn-warning">Renew</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
           <button type="button" class="btn btn-warning">View All Customers</button>
 
       </div>
@@ -166,11 +173,19 @@
     </section>
 
     <section class="row">
+        <div class="col">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-info">Details</button>
+            <button type="button" class="btn btn-success">Clear</button>
+        </div>
+
+        </div>
 
     </section>
 
     <section class="row">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered table-hover bg-white">
             <thead class="bg-info text-white">
             <tr>
                 <th>Customer ID</th>
@@ -204,6 +219,11 @@
 
 
     </section>
+                </td>
+
+            </tr>
+        </tbdoy>
+    </table>
 
 
 </main>
