@@ -529,13 +529,19 @@ main>section:nth-child(5)>section:nth-child(2)>div>div{
     background-color: gray;
 }
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(1)>div{
-
+    background: url("../images/Sailing-WordPress-theme-630x516.jpg");
+    background-size: cover;
+    background-position: center;
 }
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(2)>div{
-
+    background: url("../images/wordpress-themes-2021.jpg");
+    background-size: cover;
+    background-position: center;
 }
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(3)>div{
-
+    background: url("../images/WordPress-Design-Considerations-1024x535.jpg");
+    background-size: cover;
+    background-position: center;
 }
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(4)>div{
     background: url("../images/css1.1.PNG");
@@ -651,11 +657,12 @@ main>section:nth-child(7){
 
 main>section:nth-child(7)>section>div{
     margin-top: 140px;
-    width: 1110px;
+  /*  width: 1110px;*/
+    width: 77%;
     height: 600px;
     background-color: white;
     position: absolute;
-    left: 200px;
+    left: 175px;
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.40);
 
     display: grid;
