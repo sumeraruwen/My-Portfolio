@@ -816,12 +816,129 @@ footer{
 
 }
 
+/*=====================================
+
+=====================================*/
+
+@media  (max-width: 1329px){
+
+
+    /*service circle*/
+
+    main>section:nth-child(3)>section:nth-child(2)>div>div{
+        left: 90px;
+    }
+
+   /* contact*/
+
+    main>section:nth-child(7)>section>div{
+        margin-top: 120px;
+        position: absolute;
+        left: 180px;
+        width: 1000px;
+        height: 600px;
+    }
+
+
+}
+
+@media  (max-width: 1355px){
+
+    /* contact*/
+
+    main>section:nth-child(7)>section>div{
+        margin-top: 120px;
+        position: absolute;
+        left: 150px;
+        width: 1020px;
+        height: 600px;
+    }
+}
+
+@media  (max-width: 1326px){
+
+   /* about*/
+    main>section:nth-child(2)>div>section:nth-child(3)>p{
+        position: relative;
+        font-size: 20px;
+        left: 38px;
+        margin-right: 100px;
+        top: 30px;
+    }
+    main>section:nth-child(2)>div>section:nth-child(3)>h3{
+        position: relative;
+        font-size: 35px;
+        left: 38px;
+        top: 20px;
+    }
+
+}
+@media  (max-width: 1234px){
+   /* services*/
+    main>section:nth-child(2)>div>section:nth-child(3)>h3{
+        left: 10px;
+    }
+
+}
+
+@media  (max-width: 1251px){
+
+   /* about*/
+
+    main>section:nth-child(2)>div{
+        width: 90%;
+        height: 90vh;
+        margin-top: 80px;
+        margin-bottom: 50px;
+
+    }
+
+    main>section:nth-child(2)>div>section:nth-child(3)>p{
+        position: relative;
+        font-size: 20px;
+        left: 50px;
+        margin-right: 100px;
+        top: 30px;
+    }
+    main>section:nth-child(2)>div>section:nth-child(3)>h3{
+        left: 50px;
+    }
+
+    /*Services*/
+
+    main>section:nth-child(3)>section:nth-child(2){
+        width: 90%;
+
+    }
+    main>section:nth-child(3)>section:nth-child(2)>div>div{
+        left: 150px;
+    }
+
+ /*   counting*/
+    main>section:nth-child(4){
+        margin-top: 150px;
+
+    }
+    /* Projects*/
+
+    main>section:nth-child(5)>section:nth-child(2){
+        width: 90%;
+    }
+
+    /* Portfolio*/
+
+    main>section:nth-child(6)>section:nth-child(2){
+        width: 90%;
+    }
+
+}
 /*===============================
          Responsive Laptop S
 ===============================*/
 
 /*@media all and (min-width: 1024px) and (max-width: 1439px){*/
 @media (max-width: 1231px) {
+
 
     /*header*/
 
@@ -884,7 +1001,6 @@ footer{
 
     }
 
-
     /* Projects*/
 
     main>section:nth-child(5)>section:nth-child(2){
@@ -908,7 +1024,7 @@ footer{
         margin-top: 120px;
         position: absolute;
         left: 60px;
-        width: 900px;
+        width: 90%;
         height: 600px;
     }
 
@@ -1631,6 +1747,45 @@ footer{
             margin-left: 5px;
         }
 
-
     }
+
+  /*  @media  (max-width: 414px){
+
+       !* about*!
+        main>section:nth-child(2)>div>section:nth-child(3)>p{
+            left: -150px;
+            top: 630px;
+            width: 250px;
+            font-size: 20px;
+        }
+        main>section:nth-child(2)>div>section:nth-child(3)>h3{
+            right: 500px;
+            top: 640px;
+            left: -150px;
+        }
+
+        !* Portfolio Section*!
+
+        main>section:nth-child(6)>section:nth-child(1)>h2{
+            margin-top: 1300px;
+
+        }
+
+        !*contact*!
+        main>section:nth-child(7)>section>div{
+            margin-top: 120px;
+            width: 90%;
+        }
+        main>section:nth-child(7)>section>div>aside:nth-child(1)>form>input{
+            margin-left: 10px;
+        }
+        main>section:nth-child(7)>section>div>aside:nth-child(1)>form>textarea{
+            margin-left: 10px;
+        }
+        main>section:nth-child(7)>section>div>aside:nth-child(2)>p{
+            left: 10px;
+
+        }
+
+    }*/
 }
