@@ -1509,6 +1509,49 @@ footer{
             font-size: 14px;
         }
 
+        /*  About*/
+
+        main>section:nth-child(2)>div{
+            width: 90%;
+            height: 200vh;
+            margin-top: 80px;
+            margin-bottom: 50px;
+
+        }
+
+
+        main>section:nth-child(2)>div>section:nth-child(3)>p{
+
+            top: 680px;
+            width: 280px;
+            font-size: 18px;
+            left: -150px;
+
+        }
+        main>section:nth-child(2)>div>section:nth-child(3)>h3{
+            right: 500px;
+            top: 670px;
+            left: -150px;
+        }
+
+        main>section:nth-child(2)>div>div{
+            width: 100px;
+            height: 100px;
+            left: 30px;
+        }
+
+        main>section:nth-child(2)>div>section:nth-child(2)>section>div:nth-child(7){
+            left:90px;
+            top: 620px;
+        }
+
+        main>section:nth-child(2)>div>section:nth-child(2)>section>div:nth-child(12){
+            left:30px;
+            top: 150px;
+        }
+
+
+
         /* Services*/
 
         main>section:nth-child(3)>section:nth-child(2)>div>div{
@@ -1519,7 +1562,7 @@ footer{
 
         main>section:nth-child(4){
             margin-top: 1700px;
-            height: 900px;
+            height: 130vh;
 
         }
         main>section:nth-child(4)>div:nth-child(2){
@@ -1527,6 +1570,27 @@ footer{
             left: 110px;
         }
 
+       /* first circle*/
+        main>section:nth-child(4)>div:nth-child(2){
+            top: -1170px;
+            left: 120px;
+        }
+
+       /* last circle*/
+        main>section:nth-child(4)>div:nth-child(3){
+            top: -50px;
+            left: 0px;
+        }
+        main>section:nth-child(4)>div:nth-child(1){
+            top: -800px;
+            right: 0px;
+        }
+
+        /*third circle*/
+        main>section:nth-child(4)>div:nth-child(4){
+            top: -420px;
+            left: 0px;
+        }
 
         /* Contact */
 
