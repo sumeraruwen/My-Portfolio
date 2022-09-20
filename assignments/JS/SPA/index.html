@@ -3,8 +3,659 @@
 <head>
     <meta charset="UTF-8">
     <title>SPA POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../asserts/CSS/normalize.css">
+    <link rel="stylesheet" href="../../../asserts/fonts/css/all.min.css">
+
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="../../../asserts/CSS/bootstrap.min.css">
+
+    <style>
+
+        main{
+            background-color: #EAEAEA;
+        }
+
+
+    </style>
+
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Origin.Life
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log Out</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!--dashboard-->
+<main class="container">
+
+    <section class="row">
+        <div class="col">
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Customers</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+
+                            <i class="fa-solid fa-people-group"></i>
+                        </td>
+
+                    </tr>
+                </tbdoy>
+            </table>
+        </div>
+
+
+        <div class="col">
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Items</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                        </td>
+
+                    </tr>
+                </tbdoy>
+            </table>
+        </div>
+
+
+        <div class="col">
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Orders</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-box-archive"></i>
+
+                        </td>
+
+                    </tr>
+                </tbdoy>
+            </table>
+        </div>
+
+
+        <div class="col">
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Sales</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+
+                        </td>
+
+                    </tr>
+                </tbdoy>
+            </table>
+        </div>
+
+    </section>
+
+</main>
+
+<!--customer-->
+<main class="container-fluid">
+    <table class="table table-bordered table-hover">
+        <thead class="bg-white text-black">
+        <tr>
+            <th>Customers</th>
+        </tr>
+        </thead>
+        <tbdoy>
+            <tr>
+                <td>
+
+                    <section class="row">
+                        <div class="col">
+                            <table class="table table-bordered table-hover bg-white">
+                                <thead class="bg-success text-white">
+                                <tr>
+                                    <th>Customer Search</th>
+                                </tr>
+                                </thead>
+                                <tbdoy>
+                                    <tr>
+                                        <td>
+                                            <form class="d-flex flex-column flex-lg-row" role="search">
+                                                <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                                                       aria-label="Search">
+                                            </form>
+                                            <br>
+                                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                Name
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                        </td>
+
+                                    </tr>
+                                </tbdoy>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <!--<button type="button" class="btn btn-info">New Customer</button>-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                New Customer
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h5 class="modal-title" id="exampleModalLabel">New Customer</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!--  ...-->
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputCusID" class="form-label">Customer ID</label>
+                                                    <input type="email" class="form-control" id="exampleInputCusID" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputCusName" class="form-label">Customer Name</label>
+                                                    <input type="password" class="form-control" id="exampleInputCusName">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputCusAddress" class="form-label">Customer Address</label>
+                                                    <input type="password" class="form-control" id="exampleInputCusAddress">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputCusSalary" class="form-label">Customer Salary</label>
+                                                    <input type="password" class="form-control" id="exampleInputCusSalary">
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">Save</button>
+                                            <button type="button" class="btn btn-warning">Renew</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-warning">View All Customers</button>
+
+                        </div>
+
+                    </section>
+
+                    <section class="row">
+                        <div class="col">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <button type="button" class="btn btn-info">Details</button>
+                                <button type="button" class="btn btn-success">Clear</button>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="row justify-content-center">
+                        <table class="table table-bordered table-hover bg-white">
+                            <thead class="bg-info text-white">
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Customer Name</th>
+                                <th>Customer Address</th>
+                                <th>Customer Salary</th>
+                            </tr>
+                            </thead>
+                            <tbdoy>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+
+                            </tbdoy>
+                        </table>
+
+
+                    </section>
+                </td>
+
+            </tr>
+        </tbdoy>
+    </table>
+
+
+</main>
+
+<!--item-->
+<main class="container-fluid">
+    <table class="table table-bordered table-hover">
+        <thead class="bg-white text-black">
+        <tr>
+            <th>Items</th>
+        </tr>
+        </thead>
+        <tbdoy>
+            <tr>
+                <td>
+
+                    <section class="row">
+                        <div class="col">
+                            <table class="table table-bordered table-hover bg-white">
+                                <thead class="bg-success text-white">
+                                <tr>
+                                    <th>Item Search</th>
+                                </tr>
+                                </thead>
+                                <tbdoy>
+                                    <tr>
+                                        <td>
+                                            <form class="d-flex flex-column flex-lg-row" role="search">
+                                                <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                                                       aria-label="Search">
+                                            </form>
+                                            <br>
+                                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                Name
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                        </td>
+
+                                    </tr>
+                                </tbdoy>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <!--<button type="button" class="btn btn-info">New Customer</button>-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                New Item
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h5 class="modal-title" id="exampleModalLabel">New Item</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!--  ...-->
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputItemCode" class="form-label">Item Code</label>
+                                                    <input type="email" class="form-control" id="exampleInputItemCode" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputItemName" class="form-label">Item Name</label>
+                                                    <input type="password" class="form-control" id="exampleInputItemName">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputItemPrice" class="form-label">Item Price</label>
+                                                    <input type="password" class="form-control" id="exampleInputItemPrice">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputItemQty" class="form-label">Item Quantity</label>
+                                                    <input type="password" class="form-control" id="exampleInputItemQty">
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">Save</button>
+                                            <button type="button" class="btn btn-warning">Renew</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-warning">View All Items</button>
+
+                        </div>
+
+                    </section>
+
+                    <section class="row">
+                        <div class="col">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <button type="button" class="btn btn-info">Details</button>
+                                <button type="button" class="btn btn-success">Clear</button>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="row justify-content-center">
+                        <table class="table table-bordered table-hover bg-white">
+                            <thead class="bg-info text-white">
+                            <tr>
+                                <th>Item Code</th>
+                                <th>Item Name</th>
+                                <th>Item Price</th>
+                                <th>Item Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbdoy>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+
+                            </tbdoy>
+                        </table>
+
+
+                    </section>
+                </td>
+
+            </tr>
+        </tbdoy>
+    </table>
+
+
+</main>
+
+<!--Order-->
+<main class="container-fluid">
+    <table class="table table-bordered table-hover">
+        <thead class="bg-white text-black">
+        <tr>
+            <th>Orders</th>
+        </tr>
+        </thead>
+        <tbdoy>
+            <tr>
+                <td>
+
+                    <section class="row">
+                        <div class="col-lg-4">
+                            <table class="table table-bordered table-hover bg-white">
+                                <thead class="bg-success text-white">
+                                <tr>
+                                    <th>Invoice Details</th>
+                                </tr>
+                                </thead>
+                                <tbdoy>
+                                    <tr>
+                                        <td>
+
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="inputOrderID" class="form-label">Order ID</label>
+                                                    <input type="email" class="form-control" id="inputOrderID">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputDate" class="form-label">Date</label>
+                                                    <input type="password" class="form-control" id="inputDate">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCustomer" class="form-label">Customer</label>
+                                                    <input type="email" class="form-control" id="inputCustomer">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCustomerID" class="form-label">Customer ID</label>
+                                                    <input type="password" class="form-control" id="inputCustomerID">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputName" class="form-label">Name</label>
+                                                    <input type="email" class="form-control" id="inputName">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputSalary" class="form-label">Salary</label>
+                                                    <input type="password" class="form-control" id="inputSalary">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress" class="form-label">Address </label>
+                                                    <input type="text" class="form-control" id="inputAddress" >
+                                                </div>
+
+                                            </form>
+
+                                        </td>
+
+                                    </tr>
+                                </tbdoy>
+                            </table>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <table class="table table-bordered table-hover bg-white">
+                                <thead class="bg-success text-white">
+                                <tr>
+                                    <th>Item Select</th>
+                                </tr>
+                                </thead>
+                                <tbdoy>
+                                    <tr>
+                                        <td>
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="inputItem" class="form-label">Item</label>
+                                                    <input type="email" class="form-control" id="inputItem">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputItemCode" class="form-label">Item Code</label>
+                                                    <input type="password" class="form-control" id="inputItemCode">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputItemName" class="form-label">Item Name</label>
+                                                    <input type="text" class="form-control" id="inputItemName">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputPrice" class="form-label">Price</label>
+                                                    <input type="text" class="form-control" id="inputPrice">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputQtyHand" class="form-label">Qty Hand</label>
+                                                    <input type="text" class="form-control" id="inputQtyHand">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputOrderQty" class="form-label">Order Qty</label>
+                                                    <input type="text" class="form-control" id="inputOrderQty">
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-danger"> Add Item</button>
+                                                </div>
+
+                                            </form>
+
+                                        </td>
+
+                                    </tr>
+                                </tbdoy>
+                            </table>
+
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Total : 1045/-</h4><br>
+                                    <h4 class="card-subtitle mb-2 text-muted">Sub Total : 945/-</h4><br>
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputCash" class="form-label">Cash</label>
+                                            <input type="email" class="form-control" id="inputCash">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputDiscount" class="form-label">Discount</label>
+                                            <input type="password" class="form-control" id="inputDiscount">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputBalance" class="form-label">Balance</label>
+                                            <input type="text" class="form-control" id="inputBalance">
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-success"> Purchase</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="row justify-content-center">
+                        <table class="table table-bordered table-hover bg-white">
+                            <thead class="bg-info text-white">
+                            <tr>
+                                <th>Item Code</th>
+                                <th>Item Name</th>
+                                <th>Item Price</th>
+                                <th>Item Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                            </thead>
+                            <tbdoy>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dasun</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                    <td>100000</td>
+                                </tr>
+
+                            </tbdoy>
+                        </table>
+
+                    </section>
+
+
+                </td>
+
+            </tr>
+        </tbdoy>
+    </table>
+
+
+</main>
+
+<!--Import js for Bootstrap-->
+<script src="../../../asserts/js/bootstrap.min.js"></script>
 </body>
 </html>
