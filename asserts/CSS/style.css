@@ -407,13 +407,18 @@ main>section:nth-child(4){
     grid-template-columns: repeat(4,1fr);
 
 
-    /*background-image: url("../images/counters-bg.jpg");*/
+    background-image: url("../images/counters-bg.jpg");
     background-size: cover;
     background-position: center;
-    background-color: dodgerblue;
+   /* background: dodgerblue;*/
 
 
-
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: dodgerblue;
+    opacity: .7;
 }
 
 main>section:nth-child(4)>div{
@@ -434,14 +439,18 @@ main>section:nth-child(4)>div:nth-child(2){
 }
 
 main>section:nth-child(4)>div:nth-child(3){
-    left: 300px;
+
+    right: 290px;
 }
-main>section:nth-child(4)>div:nth-child(1){
-    right: 260px;
+main>section:nth-child(4)>div:nth-child(5){
+   /* right: 500px;*/
+  /* right: 500px;*/
+    left: 850px;
 }
 
 main>section:nth-child(4)>div:nth-child(4){
-    left: 850px;
+    left: 300px;
+
 }
 
 main>section:nth-child(4)>div>i{
@@ -651,13 +660,19 @@ main>section:nth-child(7){
     width: 100%;
     height: 800px;
 
-    /* background-image: url("../images/3.jpg");*/
+    /* background-image: url("../images/overlay-bg.jpg");*/
     background-size: cover;
     background-position: center;
     background-color: dodgerblue;
 
 
 
+}
+.overlay2{
+    width: 100%;
+    height: 100%;
+    background: red;
+    opacity: .2;
 }
 
 main>section:nth-child(7)>section>div{
@@ -679,8 +694,8 @@ main>section:nth-child(7)>section>div{
 }
 
 main>section:nth-child(7)>section>div>aside:nth-child(1)>h2{
-position: relative;
-  font-size: 30px;
+    position: relative;
+    font-size: 30px;
     margin-left: 50px;
     top: 20px;
 
