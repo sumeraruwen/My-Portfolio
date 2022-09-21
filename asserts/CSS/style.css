@@ -70,21 +70,21 @@ main>section:nth-child(1)>aside>h2{
     font-family: 'Poppins', sans-serif;
     color: white;
     top: 250px;
-    left: 200px;
+    left: 15vw;
     font-size: 45px;
 }
 main>section:nth-child(1)>aside>p{
     position: absolute;
     color: white;
     top: 330px;
-    left:300px;
+    left:22vw;
     font-size: 25px;
 }
 main>section:nth-child(1)>aside>button{
     position: relative;
     color: black;
     top: 410px;
-    left: 230px;
+    left: 18vw;
     height: 50px;
     width: 160px;
     border-radius: 30px;
@@ -133,7 +133,8 @@ main>section:nth-child(2)>div>div{
 main>section:nth-child(2)>div>section:nth-child(2)>p{
     position: relative;
     top: 60px;
-    left:300px;
+   /* left:300px;*/
+    left: 20vw;
 
 }
 main>section:nth-child(2)>div>section:nth-child(2)>section>h4{
@@ -273,6 +274,8 @@ main>section:nth-child(2)>div>section:nth-child(3)>p{
     font-size: 20px;
     left: 10px;
     margin-right: 100px;
+   /* margin-right: 3vw;
+    left: 1vw;*/
     top: 30px;
 }
 main>section:nth-child(2)>div>section:nth-child(3)>h3{
@@ -556,7 +559,9 @@ main>section:nth-child(5)>section:nth-child(2)>div:nth-child(5)>div{
     background-position: center;
 }
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(6)>div{
-
+    background: url("../images/web-development.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -1594,6 +1599,41 @@ footer{
 
     }
 
+/*    =====================================
+                    376px
+    ======================================*/
+
+    @media  (max-width: 376px){
+        /*header*/
+
+        header>section>nav>ul:nth-child(1)>li{
+            color: deeppink;
+        }
+
+        /*  home*/
+
+       /* main>section:nth-child(1)>aside>h2{
+            top: 210px;
+            font-size: 43px;
+            text-align: center;
+        }
+        main>section:nth-child(1)>aside>p{
+            top: 350px;
+            left:55px;
+            font-size: 25px;
+        }
+        main>section:nth-child(1)>aside>button{
+            top: 440px;
+            left: 40px;
+            height: 40px;
+            width: 120px;
+            border-radius: 30px;
+            font-size: 14px;
+        }*/
+
+
+
+    }
 
 /*===============================
       Responsive Mobile S
