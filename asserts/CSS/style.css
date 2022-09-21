@@ -1659,7 +1659,7 @@ footer{
         /*header*/
 
         header>section>nav>ul:nth-child(1)>li{
-            color: red;
+            color: yellow;
         }
 
         header>section>nav>ul:nth-child(2)>li{
@@ -1743,9 +1743,11 @@ footer{
             height: 130vh;
 
         }
-        main>section:nth-child(4)>div:nth-child(2){
-            top: -1400px;
-            left: 110px;
+        main>section:nth-child(4)>div:nth-child(5){
+           /* top: -800px;
+            left: 0px;*/
+            top: -50px;
+            left: 0px;
         }
 
        /* first circle*/
@@ -1756,12 +1758,14 @@ footer{
 
        /* last circle*/
         main>section:nth-child(4)>div:nth-child(3){
-            top: -50px;
-            left: 0px;
+           /* top: -50px;
+            left: 120px;*/
+            top: -800px;
+            left: 120px;
         }
         main>section:nth-child(4)>div:nth-child(1){
-            top: -800px;
-            right: 0px;
+            top: -1200px;
+            left: 60px;
         }
 
         /*third circle*/
