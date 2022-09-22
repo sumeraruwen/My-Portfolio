@@ -1207,23 +1207,27 @@ footer{
             margin: auto;
 
         }
+        /*  1 circle*/
         main>section:nth-child(4)>div:nth-child(2){
             top: 170px;
-            right: 600px;
+            right: 550px;
         }
 
+      /*  2 circle*/
         main>section:nth-child(4)>div:nth-child(3){
             top: 170px;
-            left: 180px;
+            left: 110px;
         }
-        main>section:nth-child(4)>div:nth-child(1){
+        /*  4 circle*/
+        main>section:nth-child(4)>div:nth-child(5){
             top: 170px;
-            right: 220px;
+            left: 520px;
         }
 
+        /*  3 circle*/
         main>section:nth-child(4)>div:nth-child(4){
             top: 170px;
-            left: 550px;
+            left: 180px;
         }
 
         main>section:nth-child(4)>div>i{
