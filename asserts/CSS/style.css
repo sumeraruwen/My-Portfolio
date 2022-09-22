@@ -1322,6 +1322,7 @@ footer{
 
     }
 
+
 /*===============================
          Responsive Mobile L
 ===============================*/
@@ -1478,24 +1479,35 @@ footer{
             margin: auto;
 
         }
+
+        /*1 circle*/
         main>section:nth-child(4)>div:nth-child(2){
             top: -1400px;
-           left: 170px;
+            left: 170px;
         }
-
+        /*2 circle*/
         main>section:nth-child(4)>div:nth-child(3){
-            top: -200px;
-            left: 0px;
+            top: -1000px;
+            left: 175px;
         }
         main>section:nth-child(4)>div:nth-child(1){
-            top: -1000px;
-            right: 0px;
+            top: -500px;
+          /*  right:120px;*/
         }
 
+      /*  3 circle*/
         main>section:nth-child(4)>div:nth-child(4){
             top: -600px;
-            left: 0px;
+            left:20px;
         }
+
+        /*  5 circle*/
+        main>section:nth-child(4)>div:nth-child(5){
+            top: -200px;
+            left:30px;
+
+        }
+
         main>section:nth-child(4)>div>i{
             font-size: 30px;
             position: relative;
@@ -1614,6 +1626,20 @@ footer{
 
 
     }
+  /*!*  ====================
+            502px
+    ========================*!
+    @media  (max-width: 508px){
+        header>section>nav>ul:nth-child(1)>li{
+            color: green;
+        }
+
+        main>section:nth-child(3)>section:nth-child(2)>div>div{
+            left: 160px;
+        }
+    }*/
+
+
 
 /*    =====================================
                     376px
