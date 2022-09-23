@@ -146,19 +146,19 @@
                         <!--  ...-->
                           <form>
                               <div class="mb-3">
-                                  <label for="exampleInputCusID" class="form-label">Customer ID</label>
+                                  <label for="exampleInputCusID" class="form-label" id="txtCusID">Customer ID</label>
                                   <input type="email" class="form-control" id="exampleInputCusID" aria-describedby="emailHelp">
                               </div>
                               <div class="mb-3">
-                                  <label for="exampleInputCusName" class="form-label">Customer Name</label>
+                                  <label for="exampleInputCusName" class="form-label" id="txtCusName">Customer Name</label>
                                   <input type="password" class="form-control" id="exampleInputCusName">
                               </div>
                               <div class="mb-3">
-                                  <label for="exampleInputCusAddress" class="form-label">Customer Address</label>
+                                  <label for="exampleInputCusAddress" class="form-label" id="txtCusAddress">Customer Address</label>
                                   <input type="password" class="form-control" id="exampleInputCusAddress">
                               </div>
                               <div class="mb-3">
-                                  <label for="exampleInputCusSalary" class="form-label">Customer Salary</label>
+                                  <label for="exampleInputCusSalary" class="form-label" id="txtCusSalary">Customer Salary</label>
                                   <input type="password" class="form-control" id="exampleInputCusSalary">
                               </div>
 
@@ -166,7 +166,7 @@
                       </div>
                       <div class="modal-footer">
                           <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-danger">Save</button>
+                          <button type="button" class="btn btn-danger" id="saveButton">Save</button>
                           <button type="button" class="btn btn-warning">Renew</button>
                       </div>
                   </div>
@@ -242,5 +242,20 @@
 
 <!--Import js for Bootstrap-->
 <script src="../../../../asserts/js/bootstrap.min.js"></script>
+<script src="asserts/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    $('#saveButton').click(function (){
+
+        let cusId =  $('#txtCusID').val();
+        let cusName =   $('#txtCusName').val();
+        let cusAddress =   $('#txtCusAddress').val();
+        let cusSalary =    $('#txtCusSalary').val();
+
+        alert(cusId);
+
+    });
+
+</script>
 </body>
 </html>

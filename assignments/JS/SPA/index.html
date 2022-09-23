@@ -16,6 +16,35 @@
             background-color: #EAEAEA;
         }
 
+        section:nth-child(1){
+            height: 100px;
+
+        }
+        section>div{
+
+        }
+
+        section:nth-child(2){
+            height: 50px;
+        }
+        section:nth-child(2)>div{
+            margin-top: 120px;
+        }
+        section:nth-child(3){
+            height: 480px;
+        }
+        section:nth-child(3)>table{
+            margin-top: 50px;
+            margin-bottom: 0;
+            width: 95%;
+
+        }
+
+        #orderDetailsTable{
+            margin-top: 320px;
+            margin-bottom: 0;
+            width: 95%;
+        }
 
     </style>
 
@@ -600,7 +629,7 @@
                     </section>
 
                     <section class="row justify-content-center">
-                        <table class="table table-bordered table-hover bg-white">
+                        <table class="table table-bordered table-hover bg-white" id="orderDetailsTable">
                             <thead class="bg-info text-white">
                             <tr>
                                 <th>Item Code</th>

@@ -304,6 +304,17 @@ main>section:nth-child(3)>section:nth-child(1)>h2{
     margin-bottom: 50px;
 }
 
+.line{
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    top: 0px;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 main>section:nth-child(3)>section:nth-child(2){
     width: 77%;
     height: 100vh;
