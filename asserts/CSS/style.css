@@ -308,8 +308,10 @@ main>section:nth-child(3)>section:nth-child(1)>h2{
     width: 40px;
     height: 5px;
     background-color: #0078ff;
+
+    position: relative;
     top: 0px;
-    bottom: 200px;
+    bottom: 50px;
     left: 0;
     right: 0;
     margin: auto;
