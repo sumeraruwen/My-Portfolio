@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../asserts/CSS/normalize.css">
+    <link rel="stylesheet" href="../../../asserts/fonts/css/all.min.css">
+
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="../../../asserts/CSS/bootstrap.min.css">
+
+    <style>
+        #calTable{
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+
+</head>
+<body>
+
+<main class="container" id="dashP">
+
+    <table class="table table-bordered table-hover bg-white" id="calTable">
+        <thead class="bg-success text-white">
+        <tr>
+            <th>Calculator</th>
+        </tr>
+        </thead>
+        <tbdoy>
+            <tr>
+                <td>
+                    <section class="row">
+                        <div class="col-2">
+                            <button type="button" class="btn btn-danger btn-lg" id="btnC">C</button>
+                        </div>
+                        <div class="col-10">
+                            <input type="inputField" class="form-control" id="inputF" aria-describedby="emailHelp">
+                        </div>
+                    </section>
+                    <br>
+
+
+                    <section class="row">
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">7</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">8</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">9</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">*</button>
+                        </div>
+                    </section>
+
+
+                    <br>
+                    <section class="row">
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">4</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">5</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">6</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">-</button>
+                        </div>
+                    </section>
+
+
+                    <br>
+                    <section class="row">
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">1</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">2</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">3</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">/</button>
+                        </div>
+                    </section>
+
+
+                    <br>
+                    <section class="row">
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">0</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">.</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">=</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg">+</button>
+                        </div>
+                    </section>
+
+
+                </td>
+
+            </tr>
+        </tbdoy>
+    </table>
+
+</main>
+
+<!--Import js for Bootstrap-->
+<script src="../../../asserts/js/bootstrap.min.js"></script>
+<script src=../../../asserts/js/jquery-3.6.1.min.js></script>
+<script>
+
+    $('#btnC').click(function (){
+        $('#inputF').val("");
+
+    });
+
+
+</script>
+
+</body>
+</html>
