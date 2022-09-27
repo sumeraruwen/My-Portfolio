@@ -674,10 +674,11 @@ main>section:nth-child(7){
     width: 100%;
     height: 800px;
 
-    /* background-image: url("../images/overlay-bg.jpg");*/
+   /* background-image: url("../images/overlay-bg.jpg");*/
     background-size: cover;
     background-position: center;
     background-color: dodgerblue;
+    background-attachment: fixed;
 
 
 
@@ -685,9 +686,11 @@ main>section:nth-child(7){
 .overlay2{
     width: 100%;
     height: 100%;
-    background: red;
-    opacity: .2;
+   /* background: dodgerblue;*/
+    opacity: .9;
 }
+
+
 
 main>section:nth-child(7)>section>div{
     margin-top: 140px;
@@ -745,7 +748,7 @@ main>section:nth-child(7)>section>div>aside:nth-child(1)>form>button{
     background-color: dodgerblue;
     color: white;
     border-color: white;
-font-size: 20px;
+    font-size: 20px;
 }
 
 main>section:nth-child(7)>section>div>aside:nth-child(2)>h2{
