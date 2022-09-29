@@ -36,7 +36,7 @@
                             <button type="button" class="btn btn-danger btn-lg" id="btnC">C</button>
                         </div>
                         <div class="col-10">
-                            <input type="inputField" class="form-control" id="inputF" aria-describedby="emailHelp">
+                            <input type="inputField" class="form-control" id="inputF" aria-describedby="emailHelp" >
                         </div>
                     </section>
                     <br>
@@ -44,33 +44,16 @@
 
                     <section class="row">
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">7</button>
+                            <button type="button" id="btn7" class="btn btn-primary btn-lg" value="7">7</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">8</button>
+                            <button type="button" id="btn8"  class="btn btn-primary btn-lg" value="8">8</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">9</button>
+                            <button type="button" id="btn9" class="btn btn-primary btn-lg" value="9">9</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">*</button>
-                        </div>
-                    </section>
-
-
-                    <br>
-                    <section class="row">
-                        <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">4</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">5</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">6</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">-</button>
+                            <button type="button"   class="btn btn-primary btn-lg" value="*">*</button>
                         </div>
                     </section>
 
@@ -78,16 +61,16 @@
                     <br>
                     <section class="row">
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">1</button>
+                            <button type="button" id="btn4" class="btn btn-primary btn-lg" value="4">4</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">2</button>
+                            <button type="button" id="btn5" class="btn btn-primary btn-lg" value="5">5</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">3</button>
+                            <button type="button"  id="btn6" class="btn btn-primary btn-lg" value="6">6</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">/</button>
+                            <button type="button" class="btn btn-primary btn-lg" value="-">-</button>
                         </div>
                     </section>
 
@@ -95,16 +78,33 @@
                     <br>
                     <section class="row">
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">0</button>
+                            <button type="button" id="btn1" class="btn btn-primary btn-lg" value="1">1</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">.</button>
+                            <button type="button" id="btn2" class="btn btn-primary btn-lg" value="2">2</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">=</button>
+                            <button type="button" id="btn3"  class="btn btn-primary btn-lg" value="3">3</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg">+</button>
+                            <button type="button"  class="btn btn-primary btn-lg" value="/">/</button>
+                        </div>
+                    </section>
+
+
+                    <br>
+                    <section class="row">
+                        <div class="col-3">
+                            <button type="button" id="btn0" class="btn btn-primary btn-lg" value="0">0</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg" value=".">.</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg" value="=">=</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-primary btn-lg" value="+">+</button>
                         </div>
                     </section>
 
@@ -122,10 +122,67 @@
 <script src=../../../asserts/js/jquery-3.6.1.min.js></script>
 <script>
 
+    //---------Input clear Section-------
+
     $('#btnC').click(function (){
         $('#inputF').val("");
 
     });
+
+    //---------Input Number Section-------
+
+    $('#btn1').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn1').val());
+
+    });
+
+    $('#btn2').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn2').val());
+
+    });
+
+    $('#btn3').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn3').val());
+
+    });
+
+    $('#btn4').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn4').val());
+
+    });
+
+    $('#btn5').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn5').val());
+
+    });
+
+    $('#btn6').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn6').val());
+
+    });
+
+    $('#btn7').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn7').val());
+
+    });
+
+    $('#btn8').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn8').val());
+
+    });
+
+    $('#btn9').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn9').val());
+
+    });
+
+
+    $('#btn0').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btn0').val());
+
+    });
+
+
 
 
 </script>
