@@ -26,13 +26,13 @@
             height: 50px;
         }
         section:nth-child(2)>div{
-            margin-top: 120px;
+            margin-top: 80px;
         }
         section:nth-child(3){
             height: 480px;
         }
         section:nth-child(3)>table{
-           margin-top: 50px;
+           margin-top: 80px;
             margin-bottom: 0;
             width: 95%;
 
@@ -84,7 +84,7 @@
             <th>Items</th>
         </tr>
         </thead>
-        <tbdoy>
+        <tbody>
             <tr>
                 <td>
 
@@ -96,7 +96,7 @@
                                     <th>Item Search</th>
                                 </tr>
                                 </thead>
-                                <tbdoy>
+                                <tbody>
                                     <tr>
                                         <td>
                                             <form class="d-flex flex-column flex-lg-row" role="search">
@@ -117,7 +117,7 @@
                                         </td>
 
                                     </tr>
-                                </tbdoy>
+                                </tbody>
                             </table>
                         </div>
                         <div class="col">
@@ -139,33 +139,33 @@
                                             <!--  ...-->
                                             <form>
                                                 <div class="mb-3">
-                                                    <label for="exampleInputItemCode" class="form-label">Item Code</label>
-                                                    <input type="email" class="form-control" id="exampleInputItemCode" aria-describedby="emailHelp">
+                                                    <label for="InputItemCode" class="form-label">Item Code</label>
+                                                    <input type="email" class="form-control" id="InputItemCode" aria-describedby="emailHelp">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="exampleInputItemName" class="form-label">Item Name</label>
-                                                    <input type="password" class="form-control" id="exampleInputItemName">
+                                                    <label for="InputItemName" class="form-label">Item Name</label>
+                                                    <input type="email" class="form-control" id="InputItemName">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="exampleInputItemPrice" class="form-label">Item Price</label>
-                                                    <input type="password" class="form-control" id="exampleInputItemPrice">
+                                                    <label for="InputItemPrice" class="form-label">Item Price</label>
+                                                    <input type="email" class="form-control" id="InputItemPrice">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="exampleInputItemQty" class="form-label">Item Quantity</label>
-                                                    <input type="password" class="form-control" id="exampleInputItemQty">
+                                                    <label for="InputItemQty" class="form-label">Item Quantity</label>
+                                                    <input type="email" class="form-control" id="InputItemQty">
                                                 </div>
 
                                             </form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-danger">Save</button>
+                                            <button type="button" class="btn btn-danger" id="btnItemSave">Save</button>
                                             <button type="button" class="btn btn-warning">Renew</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-warning">View All Items</button>
+                            <button type="button" class="btn btn-warning" id="btnViewAllItems">View All Items</button>
 
                         </div>
 
@@ -193,7 +193,7 @@
                                 <th>Item Quantity</th>
                             </tr>
                             </thead>
-                            <tbdoy>
+                            <tbody id="tblGetAllItem">
                                 <tr>
                                     <td>C001</td>
                                     <td>Dasun</td>
@@ -219,7 +219,7 @@
                                     <td>100000</td>
                                 </tr>
 
-                            </tbdoy>
+                            </tbody>
                         </table>
 
 
@@ -227,7 +227,7 @@
                 </td>
 
             </tr>
-        </tbdoy>
+        </tbody>
     </table>
 
 
@@ -235,6 +235,53 @@
 
 <!--Import js for Bootstrap-->
 <script src="../../../../asserts/js/bootstrap.min.js"></script>
+<script src="asserts/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    var items=[];
+
+    $('#btnItemSave').click(function (){
+        let itemCode =  $('#InputItemCode').val();
+        let itemName =    $('#InputItemName').val();
+        let itemPrice =    $('#InputItemPrice').val();
+        let itemQty =    $('#InputItemQty').val();
+
+        var itemsObject ={
+            id:itemCode,
+            name:itemName,
+            price:itemPrice,
+            qty:itemQty
+
+        }
+
+        items.push(itemsObject);
+        console.log(items);
+
+        getAll();
+
+    });
+
+    $('#btnViewAllItems').click(function (){
+        getAll();
+
+    });
+
+    //function hoisting
+
+    function getAll(){
+        $('#tblGetAllItem').empty();
+
+        for (var item of items){
+
+            var row  = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td></tr>`;
+            $('#tblGetAllItem').append(row);
+        }
+
+    }
+
+
+
+</script>
 
 </body>
 </html>

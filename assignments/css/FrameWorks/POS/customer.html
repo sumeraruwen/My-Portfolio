@@ -26,13 +26,13 @@
        height: 50px;
    }
    section:nth-child(2)>div{
-       margin-top: 120px;
+       margin-top: 80px;
    }
    section:nth-child(3){
        height: 480px;
    }
       section:nth-child(3)>table{
-          margin-top: 50px;
+          margin-top: 80px;
           margin-bottom: 0;
           width: 95%;
 
@@ -91,7 +91,7 @@
             <th>Customers</th>
         </tr>
         </thead>
-        <tbdoy>
+        <tbody>
             <tr>
                 <td>
 
@@ -146,20 +146,20 @@
                         <!--  ...-->
                           <form>
                               <div class="mb-3">
-                                  <label for="exampleInputCusID" class="form-label" id="txtCusID">Customer ID</label>
-                                  <input type="email" class="form-control" id="exampleInputCusID" aria-describedby="emailHelp">
+                                  <label for="InputCusID" class="form-label" id="txtCusID">Customer ID</label>
+                                  <input type="email" class="form-control" id="InputCusID" aria-describedby="emailHelp">
                               </div>
                               <div class="mb-3">
-                                  <label for="exampleInputCusName" class="form-label" id="txtCusName">Customer Name</label>
-                                  <input type="password" class="form-control" id="exampleInputCusName">
+                                  <label for="InputCusName" class="form-label" id="txtCusName">Customer Name</label>
+                                  <input type="email" class="form-control" id="InputCusName">
                               </div>
                               <div class="mb-3">
-                                  <label for="exampleInputCusAddress" class="form-label" id="txtCusAddress">Customer Address</label>
-                                  <input type="password" class="form-control" id="exampleInputCusAddress">
+                                  <label for="InputCusAddress" class="form-label" id="txtCusAddress">Customer Address</label>
+                                  <input type="email" class="form-control" id="InputCusAddress">
                               </div>
                               <div class="mb-3">
-                                  <label for="exampleInputCusSalary" class="form-label" id="txtCusSalary">Customer Salary</label>
-                                  <input type="password" class="form-control" id="exampleInputCusSalary">
+                                  <label for="InputCusSalary" class="form-label" id="txtCusSalary">Customer Salary</label>
+                                  <input type="email" class="form-control" id="InputCusSalary">
                               </div>
 
                           </form>
@@ -172,7 +172,7 @@
                   </div>
               </div>
           </div>
-          <button type="button" class="btn btn-warning">View All Customers</button>
+          <button type="button" class="btn btn-warning"  id="btnViewAll">View All Customers</button>
 
       </div>
 
@@ -200,7 +200,7 @@
                 <th>Customer Salary</th>
             </tr>
             </thead>
-            <tbdoy>
+            <tbody  id="tblGetAll">
                 <tr>
                     <td>C001</td>
                     <td>Dasun</td>
@@ -226,7 +226,7 @@
                     <td>100000</td>
                 </tr>
 
-            </tbdoy>
+            </tbody>
         </table>
 
 
@@ -234,7 +234,7 @@
                 </td>
 
             </tr>
-        </tbdoy>
+        </tbody>
     </table>
 
 
@@ -245,17 +245,48 @@
 <script src="asserts/js/jquery-3.6.1.min.js"></script>
 <script>
 
-   /* $('#saveButton').click(function (){
+    var customers=[];
 
-       $('#txtCusID').val();
-        $('#txtCusName').val();
-          $('#txtCusAddress').val();
-           $('#txtCusSalary').val();
+    $('#saveButton').click(function (){
 
-        alert( $('#txtCusID').val());
+        let customerID =  $('#InputCusID').val();
+        let customerName =   $('#InputCusName').val();
+        let customerAddress =   $('#InputCusAddress').val();
+        let customerSalary =   $('#InputCusSalary').val();
+
+       var customerObject = {
+           id: customerID,
+           name: customerName,
+           address: customerAddress,
+           salary: customerSalary
+
+       }
+       customers.push(customerObject);
+       console.log(customers);
+
+       getAll();
 
     });
-*/
+
+    $('#btnViewAll').click(function (){
+        getAll();
+
+    });
+
+    //function hoisting
+
+    function getAll(){
+       $('#tblGetAll').empty();
+
+       for (var cus of customers){
+
+           var row  = `<tr><td>${cus.id}</td><td>${cus.name}</td><td>${cus.address}</td><td>${cus.salary}</td></tr>`;
+           $('#tblGetAll').append(row);
+       }
+
+    }
+
+
 </script>
 </body>
 </html>
