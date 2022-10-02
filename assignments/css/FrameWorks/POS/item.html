@@ -323,6 +323,7 @@
         console.log(items);
 
         getAll();
+        bindRowItemClickEvents();
 
     });
 
@@ -342,6 +343,22 @@
             $('#tblItem').append(row);
         }
 
+    }
+
+    function bindRowItemClickEvents() {
+        $('#tblItem>tr').click(function () {
+            let id = $(this).children(':eq(0)').text();
+            let name = $(this).children(':eq(1)').text();
+            let price = $(this).children(':eq(2)').text();
+            let qty = $(this).children(':eq(3)').text();
+
+            console.log(id, name, price, qty);
+
+            $('#InputItemCode').val(id);
+            $('#InputItemName').val(name);
+            $('#InputItemPrice').val(price);
+            $('#InputItemQty').val(qty);
+        });
     }
 
 
