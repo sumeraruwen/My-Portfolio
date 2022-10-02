@@ -53,7 +53,7 @@
                             <button type="button" id="btn9" class="btn btn-primary btn-lg" value="9">9</button>
                         </div>
                         <div class="col-3">
-                            <button type="button"   class="btn btn-primary btn-lg" value="*">*</button>
+                            <button type="button"  id="btnMul"  class="btn btn-primary btn-lg" value="*">*</button>
                         </div>
                     </section>
 
@@ -70,7 +70,7 @@
                             <button type="button"  id="btn6" class="btn btn-primary btn-lg" value="6">6</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg" value="-">-</button>
+                            <button type="button" id="btnSub" class="btn btn-primary btn-lg" value="-">-</button>
                         </div>
                     </section>
 
@@ -87,7 +87,7 @@
                             <button type="button" id="btn3"  class="btn btn-primary btn-lg" value="3">3</button>
                         </div>
                         <div class="col-3">
-                            <button type="button"  class="btn btn-primary btn-lg" value="/">/</button>
+                            <button type="button" id="btnDiv"  class="btn btn-primary btn-lg" value="/">/</button>
                         </div>
                     </section>
 
@@ -101,10 +101,10 @@
                             <button type="button" class="btn btn-primary btn-lg" value=".">.</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg" value="=">=</button>
+                            <button type="button" id="btnEqual" class="btn btn-primary btn-lg" value="=">=</button>
                         </div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary btn-lg" value="+">+</button>
+                            <button type="button" id="btnAdd" class="btn btn-primary btn-lg" value="+">+</button>
                         </div>
                     </section>
 
@@ -181,7 +181,52 @@
 
     });
 
+    $('#btnMul').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btnMul').val());
 
+    });
+
+    $('#btnAdd').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btnAdd').val());
+
+    });
+
+
+    $('#btnSub').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btnSub').val());
+
+    });
+
+    $('#btnDiv').click(function (){
+        $('#inputF').val( $('#inputF').val()+ $('#btnDiv').val());
+
+    });
+
+
+
+
+    /* $('#btnEqual').click(function (){
+
+
+             $('#inputF').innerText=eval($('#inputF').innerText);
+
+       //  $('#inputF').val( $('#inputF').val()+ $('#btnEqual').val());
+
+        // $('#inputF').innerText=eval($('#inputF').innerText);
+
+
+
+     });*/
+
+    let display = document.getElementById('inputF');
+
+    let equal = document.getElementById('btnEqual');
+
+    equal.addEventListener('click', function () {
+
+           // display.value = eval(display.value);
+
+    })
 
 
 </script>
