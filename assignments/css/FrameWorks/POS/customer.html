@@ -84,7 +84,7 @@
 -->
 
 
-<main class="container">
+<!--<main class="container">
     <table class="table table-bordered table-hover">
         <thead class="bg-white text-black">
         <tr>
@@ -128,13 +128,13 @@
           </table>
         </div>
       <div class="col">
-          <!--<button type="button" class="btn btn-info">New Customer</button>-->
-          <!-- Button trigger modal -->
+          &lt;!&ndash;<button type="button" class="btn btn-info">New Customer</button>&ndash;&gt;
+          &lt;!&ndash; Button trigger modal &ndash;&gt;
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               New Customer
           </button>
 
-          <!-- Modal -->
+          &lt;!&ndash; Modal &ndash;&gt;
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
@@ -143,7 +143,7 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                        <!--  ...-->
+                        &lt;!&ndash;  ...&ndash;&gt;
                           <form>
                               <div class="mb-3">
                                   <label for="InputCusID" class="form-label" id="txtCusID">Customer ID</label>
@@ -201,30 +201,7 @@
             </tr>
             </thead>
             <tbody  id="tblGetAll">
-                <tr>
-                    <td>C001</td>
-                    <td>Dasun</td>
-                    <td>Galle</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>C001</td>
-                    <td>Dasun</td>
-                    <td>Galle</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>C001</td>
-                    <td>Dasun</td>
-                    <td>Galle</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>C001</td>
-                    <td>Dasun</td>
-                    <td>Galle</td>
-                    <td>100000</td>
-                </tr>
+
 
             </tbody>
         </table>
@@ -238,21 +215,88 @@
     </table>
 
 
+</main>-->
+
+<main class="container-fluid" id="customerContent">
+    <section class="row">
+        <div class="col-4">
+
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Add Customer</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <div  class="mb-4">
+                                <label for="InputCusID">Customer ID</label>
+                                <input class="form-control" id="InputCusID" required type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusName">Customer Name</label>
+                                <input class="form-control" id="InputCusName" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusAddress">Customer Address</label>
+                                <input class="form-control" id="InputCusAddress" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusSalary">Customer Salary</label>
+                                <input class="form-control" id="InputCusSalary" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
+                                <button class="btn btn-danger" id="btnCusDelete">Remove</button>
+                                <button class="btn btn-warning" id="btnUpdate">Update</button>
+                                <button class="btn btn-success" id="btnGetAll">Get All</button>
+                                <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbdoy>
+            </table>
+
+        </div>
+        <div class="col-8">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
 </main>
+
 
 <!--Import js for Bootstrap-->
 <script src="../../../../asserts/js/bootstrap.min.js"></script>
 <script src="asserts/js/jquery-3.6.1.min.js"></script>
 <script>
 
-    var customers=[];
 
-    $('#saveButton').click(function (){
+   var customers=[];
 
-        let customerID =  $('#InputCusID').val();
-        let customerName =   $('#InputCusName').val();
-        let customerAddress =   $('#InputCusAddress').val();
-        let customerSalary =   $('#InputCusSalary').val();
+   $('#btnCustomer').click(function (){
+
+       let customerID = $('#InputCusID').val();
+       let customerName = $("#InputCusName").val();
+       let customerAddress = $("#InputCusAddress").val();
+       let customerSalary = $("#InputCusSalary").val();
 
        var customerObject = {
            id: customerID,
@@ -263,28 +307,34 @@
        }
        customers.push(customerObject);
        console.log(customers);
+       console.log(customerObject);
 
        getAll();
+       // bindRowClickEvents();
 
-    });
+   });
 
-    $('#btnViewAll').click(function (){
-        getAll();
+   $('#btnGetAll').click(function (){
+       getAll();
 
-    });
+   });
 
-    //function hoisting
+   //-----function hoisting-------------
 
-    function getAll(){
-       $('#tblGetAll').empty();
+   function getAll(){
+       $('#tblCustomer').empty();
 
        for (var cus of customers){
 
            var row  = `<tr><td>${cus.id}</td><td>${cus.name}</td><td>${cus.address}</td><td>${cus.salary}</td></tr>`;
-           $('#tblGetAll').append(row);
+           $('#tblCustomer').append(row);
        }
 
-    }
+   }
+
+   $('#tblCustomer>tr').click(function(){
+       alert("hello");
+   });
 
 
 </script>

@@ -77,7 +77,7 @@
     </div>
 </nav>
 
-<main class="container">
+<!--<main class="container">
     <table class="table table-bordered table-hover">
         <thead class="bg-white text-black">
         <tr>
@@ -121,13 +121,13 @@
                             </table>
                         </div>
                         <div class="col">
-                            <!--<button type="button" class="btn btn-info">New Customer</button>-->
-                            <!-- Button trigger modal -->
+                            &lt;!&ndash;<button type="button" class="btn btn-info">New Customer</button>&ndash;&gt;
+                            &lt;!&ndash; Button trigger modal &ndash;&gt;
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 New Item
                             </button>
 
-                            <!-- Modal -->
+                            &lt;!&ndash; Modal &ndash;&gt;
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -136,7 +136,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <!--  ...-->
+                                            &lt;!&ndash;  ...&ndash;&gt;
                                             <form>
                                                 <div class="mb-3">
                                                     <label for="InputItemCode" class="form-label">Item Code</label>
@@ -231,6 +231,71 @@
     </table>
 
 
+</main>-->
+
+<main class="container-fluid" id="itemContent">
+    <section class="row">
+        <div class="col-4">
+
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Add Item</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <div  class="mb-4">
+                                <label for="InputItemCode">Item Code</label>
+                                <input class="form-control" id="InputItemCode" required type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItemName">Item Name</label>
+                                <input class="form-control" id="InputItemName" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItemPrice">Customer Address</label>
+                                <input class="form-control" id="InputItemPrice" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItemQty">Customer Salary</label>
+                                <input class="form-control" id="InputItemQty" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <button class="btn btn-primary" id="btnSaveItem">Save Item</button>
+                                <button class="btn btn-danger" id="btnCusDelete">Remove</button>
+                                <button class="btn btn-warning" id="btnUpdate">Update</button>
+                                <button class="btn btn-success" id="btnGetAll">Get All</button>
+                                <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbdoy>
+            </table>
+
+        </div>
+        <div class="col-8">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Item Qty</th>
+                </tr>
+                </thead>
+                <tbody id="tblItem">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
 </main>
 
 <!--Import js for Bootstrap-->
@@ -240,7 +305,7 @@
 
     var items=[];
 
-    $('#btnItemSave').click(function (){
+    $('#btnSaveItem').click(function (){
         let itemCode =  $('#InputItemCode').val();
         let itemName =    $('#InputItemName').val();
         let itemPrice =    $('#InputItemPrice').val();
@@ -269,12 +334,12 @@
     //function hoisting
 
     function getAll(){
-        $('#tblGetAllItem').empty();
+        $('#tblItem').empty();
 
         for (var item of items){
 
             var row  = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td></tr>`;
-            $('#tblGetAllItem').append(row);
+            $('#tblItem').append(row);
         }
 
     }
