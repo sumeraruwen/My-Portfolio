@@ -13,6 +13,18 @@ a{
     text-decoration: none;
 }
 
+.navbar-color{
+    /*background: #f5f5f5;*/
+    background: white;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.20);
+    transition-duration: 0.3s;
+}
+
+.a-color{
+    color: #0078ff;
+    transition-duration: 0.9s;
+}
+
 /*===============================
           Header Nav Bar
 ===============================*/
