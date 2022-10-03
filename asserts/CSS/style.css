@@ -4,6 +4,14 @@ body{
 main{
     overflow: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
 
 /*===============================
           Header Nav Bar
@@ -31,6 +39,7 @@ header>section>nav>ul:nth-child(2){
     top: 0px;
     right: 150px;
     cursor: pointer;
+    scroll-behavior: smooth;
 
 }
 header>section>nav>ul:nth-child(1)>li{
