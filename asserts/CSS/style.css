@@ -23,6 +23,25 @@ a{
 .a-color{
     color: #0078ff;
     transition-duration: 0.5s;
+
+}
+.a-hover::after{
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background-color: dodgerblue;
+    display: block;
+    margin-top: 5px;
+    transition: 0.4s ease-in-out;
+
+}
+.a-hover:hover::after{
+    content: '';
+    width: 70%;
+    height: 2.5px;
+    background-color: dodgerblue;
+    display: block;
+    margin-top: 5px;
 }
 
 /*===============================
@@ -71,6 +90,26 @@ header{
     z-index: 2;
     width: 100%;
 
+}
+
+li a::after{
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background-color: white;
+    display: block;
+    transition: 0.4s ease-in-out;
+    margin-top: 5px;
+
+}
+
+li a:hover::after{
+    content: '';
+    width: 70%;
+    height: 2.5px;
+    background-color: white;
+    display: block;
+    margin-top: 5px;
 }
 
 
