@@ -159,6 +159,24 @@ main>section:nth-child(1)>aside>h2{
     background-size: cover;
     background-position: center;
 }
+
+#a7{
+    background: url("../images/case7 (2).PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+#a8{
+    background: url("../images/case8.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+#a9{
+    background: url("../images/case9.PNG");
+    background-size: cover;
+    background-position: center;
+}
 /*===============================
           Footer Section
 ===============================*/
