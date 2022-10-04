@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 
-a{
+.ad{
     color: white;
     text-decoration: none;
 }
@@ -648,6 +648,11 @@ main>section:nth-child(5)>section:nth-child(2)>div:nth-child(6)>div{
     background-position: center;
 }
 
+.linkProject{
+    text-decoration: none;
+    color: black;
+}
+
 
 /*===============================
           Portfolio Section
@@ -837,7 +842,7 @@ main>section:nth-child(7)>section>div>aside:nth-child(2)>div{
     background-color: dodgerblue;
     position: relative;
     display: inline-block;
-    top: 30px;
+    top: 25px;
     right: 80px;
     border-radius: 100%;
     margin-left: 20px;
@@ -849,11 +854,12 @@ main>section:nth-child(7)>section>div>aside:nth-child(2)>div>div{
     height: 42px;
     background-color: white;
     position: relative;
-    top: 3.5px;
+    top: 3px;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
+    cursor: pointer;
 
     border-radius: 100%;
 
