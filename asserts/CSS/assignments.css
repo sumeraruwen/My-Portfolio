@@ -1,0 +1,73 @@
+/*===============================
+          Header Nav Bar
+===============================*/
+
+header{
+    background-color: dodgerblue;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 0;
+    transition-duration: 0.5s;
+
+
+}
+
+header>section>nav>ul:nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    cursor: pointer;
+
+}
+header>section>nav>ul:nth-child(2){
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+
+}
+header>section>nav>ul:nth-child(1)>li{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+header>section>nav>ul:nth-child(2)>li{
+    display: inline-block;
+    padding: 15px;
+    color: white;
+}
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+
+}
+.ad{
+    text-decoration: none;
+    color: white;
+}
+
+/*===============================
+          Home Section
+===============================*/
+main{
+    position: relative;
+}
+main>section:nth-child(1){
+    background-color: dodgerblue;
+    top: 0;
+    position: relative;
+    height: 50vh;
+
+}
+main>section:nth-child(1)>aside>h2{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    top: 150px;
+    left: 37vw;
+    font-size: 50px;
+}
