@@ -1,6 +1,9 @@
 body{
     background-color: #EAEAEA;
 }
+
+
+
 /*
 #loader{
     position: fixed;
@@ -175,9 +178,18 @@ main>section:nth-child(1)>aside>button{
     left: 18vw;
     height: 50px;
     width: 160px;
-    border-radius: 30px;
+    border-radius: 20px;
    background-color: white;
     cursor: pointer;
+
+}
+
+
+#btn1:hover,#btn2:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: .5s;
 }
 
 
