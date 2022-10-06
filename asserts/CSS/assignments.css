@@ -118,7 +118,7 @@ main>section:nth-child(1)>aside>h2{
 .box1{
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.40);
     background-color: white;
-     border-radius: 1rem;
+     /*border-radius: 1rem;*/
     text-align: center;
 
 }
