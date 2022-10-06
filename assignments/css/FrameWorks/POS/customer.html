@@ -352,6 +352,29 @@
    });*/
 
 
+   $('#InputCusID').on('keydown',function (event){
+       if(event.key=="Enter"){
+           $('#InputCusName').focus();
+       }
+   })
+
+   $('#InputCusName').on('keydown',function (event){
+       if(event.key=="Enter"){
+           $('#InputCusAddress').focus();
+       }
+   })
+
+   $('#InputCusAddress').on('keydown',function (event){
+       if(event.key=="Enter"){
+           $('#InputCusSalary').focus();
+       }
+   })
+
+   $('#InputCusID,#InputCusName,#InputCusAddress,#InputCusSalary').on('keydown',function (event){
+       if(event.key=="Tab"){
+          event.preventDefault();
+       }
+   })
 
 
 
