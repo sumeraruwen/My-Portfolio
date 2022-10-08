@@ -18,6 +18,7 @@ $('#btnCustomer').click(function (){
 
     loadAllCustomers();
     bindRowClickEvents();
+    searchCustomer();
 
 });
 
@@ -83,5 +84,38 @@ $('#InputCusID,#InputCusName,#InputCusAddress,#InputCusSalary').on('keydown',fun
         event.preventDefault();
     }
 })
+
+
+
+    $('#InputCusID').on('keydown' , function (event){
+        if(event.key=="Enter"){
+            let typeId = $('#InputCusID').val();
+            let customer = searchCustomer(typeId);
+            if(customer!=null){
+                setTextFieldValues(customer.id,customer.name,customer.address,customer.salary);
+            }
+
+        }
+
+    });
+
+function setTextFieldValues(id,name,address,salary){
+    $('#InputCusID').val(id);
+    $('#InputCusName').val(name);
+    $('#InputCusAddress').val(address);
+    $('#InputCusSalary').val(salary);
+
+}
+
+function searchCustomer(cusID){
+    for(let customer of customers){
+        if(customer.id==cusID){
+            return customer;
+        }
+    }
+    return null;
+
+}
+
 
 

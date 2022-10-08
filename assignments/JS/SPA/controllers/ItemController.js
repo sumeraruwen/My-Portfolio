@@ -78,3 +78,38 @@ $('#InputItmCode,#InputItmName,#InputItmPrice').on('keydown', function (event){
         event.preventDefault();
     }
 })
+
+
+$('#InputItmCode').on('keydown', function (event){
+    if(event.key=="Enter"){
+        let typeCode= $('#InputItmCode').val();
+        let item= searchItems(typeCode);
+        if(item!=null){
+            setTextFields(item.code,item.name,item.price,item.qty);
+        }
+    }
+
+})
+
+function setTextFields(code, name ,price , qty){
+    $('#InputItmCode').val(code);
+    $('#InputItmName').val(name);
+    $('#InputItmPrice').val(price);
+    $('#InputItmQty').val(qty);
+
+}
+
+function searchItems(itmCode){
+    for(let item of items){
+        if(item.code==itmCode){
+            return item;
+        }
+    }
+        return null;
+}
+
+
+
+
+
+
