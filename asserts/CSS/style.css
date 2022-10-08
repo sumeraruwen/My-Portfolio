@@ -1484,7 +1484,7 @@ footer{
             left: 70px;
             height: 50px;
             width: 140px;
-            border-radius: 30px;
+           /* border-radius: 30px;*/
         }
 
 
@@ -1771,7 +1771,7 @@ footer{
                     376px
     ======================================*/
 
-    @media  (max-width: 376px){
+    @media  (max-width: 370px){
         /*header*/
 
         header>section>nav>ul:nth-child(1)>li{
@@ -1780,10 +1780,40 @@ footer{
 
         /*  home*/
 
-       /* main>section:nth-child(1)>aside>h2{
+        main>section:nth-child(1)>aside>h2{
             top: 210px;
             font-size: 43px;
             text-align: center;
+        }
+        main>section:nth-child(1)>aside>p{
+            top: 350px;
+            left:45px;
+            font-size: 25px;
+        }
+        main>section:nth-child(1)>aside>button{
+            top: 440px;
+            left: 40px;
+            height: 40px;
+            width: 120px;
+            font-size: 14px;
+        }
+
+
+
+    }
+
+ /*============================
+            360px
+ ============================    */
+  /*  @media  (max-width: 376px){
+
+        !*  home*!
+
+        main>section:nth-child(1)>aside>h2{
+            top: 210px;
+            font-size: 43px;
+            text-align: center;
+            !*color: #ff253a;*!
         }
         main>section:nth-child(1)>aside>p{
             top: 350px;
@@ -1797,17 +1827,19 @@ footer{
             width: 120px;
             border-radius: 30px;
             font-size: 14px;
-        }*/
-
+        }
 
 
     }
+
+*/
+
 
 /*===============================
       Responsive Mobile S
 ===============================*/
 
-    @media  (max-width: 320px){
+    @media  (max-width: 321px){
 
         /*header*/
 
@@ -1829,6 +1861,7 @@ footer{
         main>section:nth-child(1)>aside>p{
             top: 350px;
             left:55px;
+            /*text-align: center;*/
             font-size: 25px;
         }
         main>section:nth-child(1)>aside>button{
@@ -1836,8 +1869,9 @@ footer{
             left: 40px;
             height: 40px;
             width: 120px;
-            border-radius: 30px;
+            border-radius: 20px;
             font-size: 14px;
+            alignment: center;
         }
 
         /*  About*/
@@ -1854,9 +1888,9 @@ footer{
         main>section:nth-child(2)>div>section:nth-child(3)>p{
 
             top: 680px;
-            width: 280px;
-            font-size: 18px;
-            left: -150px;
+            width: 260px;
+            font-size: 17px;
+            left: -155px;
 
         }
         main>section:nth-child(2)>div>section:nth-child(3)>h3{
@@ -1925,7 +1959,7 @@ footer{
         /* Contact */
 
         main>section:nth-child(7){
-            margin-top: 1100px;
+            margin-top: 1200px;
             width: 100%;
             height: 1300px;
         }
@@ -1962,6 +1996,7 @@ footer{
         }
 
     }
+
 
   /*  @media  (max-width: 414px){
 

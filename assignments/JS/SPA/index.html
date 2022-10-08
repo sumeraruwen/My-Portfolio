@@ -10,7 +10,7 @@
     <!--link bootstrap-->
     <link rel="stylesheet" href="../../../asserts/CSS/bootstrap.min.css">
 
-    <style>
+    <!--<style>
 
         main{
             background-color: #EAEAEA;
@@ -46,7 +46,7 @@
             width: 95%;
         }
 
-    </style>
+    </style>-->
 
 </head>
 <body>
@@ -174,7 +174,7 @@
 </main>
 
 <!--customer-->
-<main class="container-fluid" id="customerP">
+<!--<main class="container-fluid" id="customerP">
     <table class="table table-bordered table-hover">
         <thead class="bg-white text-black">
         <tr>
@@ -218,13 +218,13 @@
                             </table>
                         </div>
                         <div class="col">
-                            <!--<button type="button" class="btn btn-info">New Customer</button>-->
-                            <!-- Button trigger modal -->
+                            &lt;!&ndash;<button type="button" class="btn btn-info">New Customer</button>&ndash;&gt;
+                            &lt;!&ndash; Button trigger modal &ndash;&gt;
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 New Customer
                             </button>
 
-                            <!-- Modal -->
+                            &lt;!&ndash; Modal &ndash;&gt;
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -233,7 +233,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <!--  ...-->
+                                            &lt;!&ndash;  ...&ndash;&gt;
                                             <form>
                                                 <div class="mb-3">
                                                     <label for="exampleInputCusID" class="form-label">Customer ID</label>
@@ -328,10 +328,75 @@
     </table>
 
 
+</main>-->
+
+<main class="container-fluid" id="customerContent">
+    <section class="row">
+        <div class="col-4">
+
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Add Customer</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <div  class="mb-4">
+                                <label for="InputCusID">Customer ID</label>
+                                <input class="form-control" id="InputCusID" required type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusName">Customer Name</label>
+                                <input class="form-control" id="InputCusName" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusAddress">Customer Address</label>
+                                <input class="form-control" id="InputCusAddress" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusSalary">Customer Salary</label>
+                                <input class="form-control" id="InputCusSalary" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
+                                <button class="btn btn-danger" id="btnCusDelete">Remove</button>
+                                <button class="btn btn-warning" id="btnCusUpdate">Update</button>
+                                <button class="btn btn-success" id="btnCusGetAll">Get All</button>
+                                <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbdoy>
+            </table>
+
+        </div>
+        <div class="col-8">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
 </main>
 
 <!--item-->
-<main class="container-fluid" id="itemP">
+<!--<main class="container-fluid" id="itemP">
     <table class="table table-bordered table-hover">
         <thead class="bg-white text-black">
         <tr>
@@ -375,13 +440,13 @@
                             </table>
                         </div>
                         <div class="col">
-                            <!--<button type="button" class="btn btn-info">New Customer</button>-->
-                            <!-- Button trigger modal -->
+                            &lt;!&ndash;<button type="button" class="btn btn-info">New Customer</button>&ndash;&gt;
+                            &lt;!&ndash; Button trigger modal &ndash;&gt;
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 New Item
                             </button>
 
-                            <!-- Modal -->
+                            &lt;!&ndash; Modal &ndash;&gt;
                             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -390,7 +455,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <!--  ...-->
+                                            &lt;!&ndash;  ...&ndash;&gt;
                                             <form>
                                                 <div class="mb-3">
                                                     <label for="exampleInputItemCode" class="form-label">Item Code</label>
@@ -485,6 +550,71 @@
     </table>
 
 
+</main>-->
+
+<main class="container-fluid" id="itemContent">
+    <section class="row">
+        <div class="col-4">
+
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Add Item</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <div  class="mb-4">
+                                <label for="InputItmCode">Item Code</label>
+                                <input class="form-control" id="InputItmCode" required type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItmName">Item Name</label>
+                                <input class="form-control" id="InputItmName" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItmPrice">Customer Address</label>
+                                <input class="form-control" id="InputItmPrice" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItmQty">Customer Salary</label>
+                                <input class="form-control" id="InputItmQty" type="text">
+
+                            </div>
+                            <div  class="mb-4">
+                                <button class="btn btn-primary" id="btnSaveItem">Save Item</button>
+                                <button class="btn btn-danger" id="btnItemDelete">Remove</button>
+                                <button class="btn btn-warning" id="btnUpdate">Update</button>
+                                <button class="btn btn-success" id="btnGetAll">Get All</button>
+                                <button class="btn btn-danger" id="btnClearItem">Clear All</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbdoy>
+            </table>
+
+        </div>
+        <div class="col-8">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Item Qty</th>
+                </tr>
+                </thead>
+                <tbody id="tblItem">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
 </main>
 
 <!--Order-->
@@ -518,7 +648,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="inputDate" class="form-label">Date</label>
-                                                    <input type="password" class="form-control" id="inputDate">
+                                                    <input type="date" class="form-control" id="inputDate">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="inputCustomer" class="form-label">Customer</label>
@@ -687,40 +817,44 @@
 <!--Import js for Bootstrap-->
 <script src="../../../asserts/js/bootstrap.min.js"></script>
 <script src=../../../asserts/js/jquery-3.6.1.min.js></script>
+<script src="db/db.js"></script>
+<script src="controllers/DashboardController.js"></script>
+<script src="controllers/CustomerController.js"></script>
+<script src="controllers/ItemController.js"></script>
 <script>
 
-  /*  Home nav*/
+  /*/!*  Home nav*!/
     $('.nHome').click(function (){
-       $('#customerP').css('display','none');
-        $('#itemP').css('display','none');
+       $('#customerContent').css('display','none');
+        $('#itemContent').css('display','none');
         $('#orderP').css('display','none');
         $('#dashP').css('display','block');
     });
 
-  /*  Item nav*/
+  /!*  Item nav*!/
     $('.nItem').click(function (){
-        $('#customerP').css('display','none');
+        $('#customerContent').css('display','none');
         $('#orderP').css('display','none');
         $('#dashP').css('display','none');
-        $('#itemP').css('display','inline-block');
+        $('#itemContent').css('display','inline-block');
     });
 
-  /*  Customer nav*/
+  /!*  Customer nav*!/
       $('.nCustomer').click(function (){
-          $('#customerP').css('display','inline-block');
+          $('#customerContent').css('display','inline-block');
           $('#orderP').css('display','none');
           $('#dashP').css('display','none');
-          $('#itemP').css('display','none');
+          $('#itemContent').css('display','none');
       });
 
-  /*  Orders nav*/
+  /!*  Orders nav*!/
       $('.nOrder').click(function (){
-          $('#customerP').css('display','none');
+          $('#customerContent').css('display','none');
           $('#orderP').css('display','inline-block');
           $('#dashP').css('display','none');
-          $('#itemP').css('display','none');
+          $('#itemContent').css('display','none');
       });
-
+*/
 </script>
 </body>
 </html>
