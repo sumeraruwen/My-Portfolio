@@ -79,6 +79,7 @@ $('#InputItmCode,#InputItmName,#InputItmPrice').on('keydown', function (event){
     }
 })
 
+// =======Search Item=============
 
 $('#InputItmCode').on('keydown', function (event){
     if(event.key=="Enter"){
