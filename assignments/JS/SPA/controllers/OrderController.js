@@ -41,3 +41,46 @@ function searchOrderCustomer(cusID){
     return null;
 
 }
+
+
+function loadAllItemsForOption() {
+    $("#selectItmCode").empty();
+    for (let itm of items) {
+        $("#selectItmCode").append(`<option>${itm.code}</option>`);
+    }
+
+}
+
+
+// =======Search Item=============
+
+$('#selectItmCode').on('keydown', function (event){
+    if(event.key=="Enter"){
+        let typeCode= $('#selectItmCode').val();
+        let item= searchOrderItems(typeCode);
+        if(item!=null){
+            setOrderItmTextFieldValues(item.code,item.name,item.price,item.qty);
+        }else{
+            alert("There is no customer for that ID");
+            setOrderItmTextFieldValues("","","","");
+        }
+    }
+
+})
+
+function setOrderItmTextFieldValues(code, name ,price , qty){
+    $('#orderItemCode').val(code);
+    $('#orderItemName').val(name);
+    $('#orderItemPrice').val(price);
+    $('#orderItemQtyHand').val(qty);
+
+}
+
+function searchOrderItems(itmCode){
+    for(let item of items){
+        if(item.code==itmCode){
+            return item;
+        }
+    }
+    return null;
+}

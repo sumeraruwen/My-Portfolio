@@ -697,29 +697,34 @@
                                         <td>
                                             <form class="row g-3">
                                                 <div class="col-md-6">
-                                                    <label for="inputItem" class="form-label">Item</label>
-                                                    <input type="email" class="form-control" id="inputItem">
+                                                    <label for="orderItemCode" class="form-label">Item</label>
+                                                    <input type="text" class="form-control" id="orderItemCode">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="inputItemCode" class="form-label">Item Code</label>
-                                                    <input type="password" class="form-control" id="inputItemCode">
+                                                    <label class="form-label">Item Code</label>
+                                                  <!--  <input type="password" class="form-control" id="inputItemCode">-->
+                                                    <select class="form-control" id="selectItmCode">
+
+                                                    </select>
+                                                    <span class="control-error"></span>
+
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="inputItemName" class="form-label">Item Name</label>
-                                                    <input type="text" class="form-control" id="inputItemName">
+                                                    <label for="orderItemName" class="form-label">Item Name</label>
+                                                    <input type="text" class="form-control" id="orderItemName">
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <label for="inputPrice" class="form-label">Price</label>
-                                                    <input type="text" class="form-control" id="inputPrice">
+                                                    <label for="orderItemPrice" class="form-label">Price</label>
+                                                    <input type="text" class="form-control" id="orderItemPrice">
 
                                                 </div>
                                                 <div class="col-md-2">
-                                                    <label for="inputQtyHand" class="form-label">Qty Hand</label>
-                                                    <input type="text" class="form-control" id="inputQtyHand">
+                                                    <label for="orderItemQtyHand" class="form-label">Qty Hand</label>
+                                                    <input type="text" class="form-control" id="orderItemQtyHand">
                                                 </div>
                                                 <div class="col-12">
-                                                    <label for="inputOrderQty" class="form-label">Order Qty</label>
-                                                    <input type="text" class="form-control" id="inputOrderQty">
+                                                    <label for="orderItemQty" class="form-label">Order Qty</label>
+                                                    <input type="text" class="form-control" id="orderItemQty">
                                                 </div>
                                                 <div class="col-12">
                                                     <button type="submit" class="btn btn-danger"> Add Item</button>

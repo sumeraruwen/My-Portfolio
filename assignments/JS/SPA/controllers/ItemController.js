@@ -18,6 +18,7 @@ $('#btnSaveItem').click(function (){
 
     getAll();
     bindRowItemClickEvents();
+    loadAllItemsForOption();
 
 });
 
