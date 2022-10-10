@@ -86,13 +86,16 @@ $('#InputItmCode').on('keydown', function (event){
         let typeCode= $('#InputItmCode').val();
         let item= searchItems(typeCode);
         if(item!=null){
-            setTextFields(item.code,item.name,item.price,item.qty);
+            setItmTextFieldValues(item.code,item.name,item.price,item.qty);
+        }else{
+            alert("There is no customer for that ID");
+            setItmTextFieldValues("","","","");
         }
     }
 
 })
 
-function setTextFields(code, name ,price , qty){
+function setItmTextFieldValues(code, name ,price , qty){
     $('#InputItmCode').val(code);
     $('#InputItmName').val(name);
     $('#InputItmPrice').val(price);

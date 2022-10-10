@@ -18,9 +18,21 @@ $('#btnCustomer').click(function (){
 
     loadAllCustomers();
     bindRowClickEvents();
-    searchCustomer();
+
 
 });
+
+$('#btnCusDelete').click(function (){
+    let deleteID = $('#InputCusID').val();
+    if(deleteCustomer(deleteID)){
+        alert("Customer Successfully deleted");
+        setCusTextFieldValues("","","","");
+
+    }else {
+        alert("no such customer");
+
+    }
+})
 
 $('#btnGetAll').click(function (){
     getAll();
@@ -93,14 +105,18 @@ $('#InputCusID,#InputCusName,#InputCusAddress,#InputCusSalary').on('keydown',fun
             let typeId = $('#InputCusID').val();
             let customer = searchCustomer(typeId);
             if(customer!=null){
-                setTextFieldValues(customer.id,customer.name,customer.address,customer.salary);
+                setCusTextFieldValues(customer.id,customer.name,customer.address,customer.salary);
+            }else{
+                alert("There is no customer for that ID");
+                setCusTextFieldValues("","","","");
+
             }
 
         }
 
     });
 
-function setTextFieldValues(id,name,address,salary){
+function setCusTextFieldValues(id,name,address,salary){
     $('#InputCusID').val(id);
     $('#InputCusName').val(name);
     $('#InputCusAddress').val(address);
@@ -119,7 +135,7 @@ function searchCustomer(cusID){
 }
 
 
-$('#InputCusID').on('keydown' , function (event){
+/*$('#InputCusID').on('keydown' , function (event){
     if(event.key=="Enter"){
         let typeId = $('#InputCusID').val();
         let customer = searchCustomer(typeId);
@@ -129,6 +145,23 @@ $('#InputCusID').on('keydown' , function (event){
 
     }
 
-});
+});*/
 
+/*========================
+Delete customer
+=========================*/
+
+function deleteCustomer(customerID){
+     let customer = searchCustomer(customerID);
+
+     if(customer!=null){
+        let indexNumber = customers.indexOf(customer);
+        customers.splice(indexNumber,1);
+        loadAllCustomers();
+        return true;
+
+     }else {
+         return false;
+     }
+}
 
