@@ -651,24 +651,29 @@
                                                     <input type="date" class="form-control" id="inputDate">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="inputCustomer" class="form-label">Customer</label>
-                                                    <input type="email" class="form-control" id="inputCustomer">
+                                                    <label for="orderCustomerID" class="form-label">Customer</label>
+                                                    <input type="email" class="form-control" id="orderCustomerID">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="inputCustomerID" class="form-label">Customer ID</label>
-                                                    <input type="password" class="form-control" id="inputCustomerID">
+                                                    <label class="form-label">Customer ID</label>
+                                                   <!-- <input type="password" class="form-control" id="inputCustomerID">-->
+                                                    <select class="form-control" id="selectCusID">
+
+                                                    </select>
+                                                    <span class="control-error"
+                                                          id="cus-empty-error"></span>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="inputName" class="form-label">Name</label>
-                                                    <input type="email" class="form-control" id="inputName">
+                                                    <label for="orderCustomerName" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="orderCustomerName">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="inputSalary" class="form-label">Salary</label>
-                                                    <input type="password" class="form-control" id="inputSalary">
+                                                    <label for="orderCustomerSalary" class="form-label">Salary</label>
+                                                    <input type="text" class="form-control" id="orderCustomerSalary">
                                                 </div>
                                                 <div class="col-12">
-                                                    <label for="inputAddress" class="form-label">Address </label>
-                                                    <input type="text" class="form-control" id="inputAddress" >
+                                                    <label for="orderCustomerAddress" class="form-label">Address </label>
+                                                    <input type="text" class="form-control" id="orderCustomerAddress" >
                                                 </div>
 
                                             </form>
@@ -821,6 +826,7 @@
 <script src="controllers/DashboardController.js"></script>
 <script src="controllers/CustomerController.js"></script>
 <script src="controllers/ItemController.js"></script>
+<script src="controllers/OrderController.js"></script>
 <script>
 
   /*/!*  Home nav*!/

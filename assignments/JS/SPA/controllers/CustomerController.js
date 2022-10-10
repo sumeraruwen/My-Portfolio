@@ -18,6 +18,7 @@ $('#btnCustomer').click(function (){
 
     loadAllCustomers();
     bindRowClickEvents();
+    loadAllCustomersForOption();
 
 
 });
