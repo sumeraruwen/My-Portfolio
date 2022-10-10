@@ -21,6 +21,33 @@ $('#btnSaveItem').click(function (){
 
 });
 
+$('#btnItemDelete').click(function (){
+    let deleteCode = $('#InputItmCode').val();
+    if(deleteItem(deleteCode)){
+        alert("Item Successfully deleted");
+        setItmTextFieldValues("","","","");
+
+    }else {
+        alert("no such Item");
+
+    }
+
+});
+
+
+$('#btnItemUpdate').click(function (){
+    let itemCode= $('#InputItmCode').val();
+    let response = updateItem(itemCode);
+    if(response){
+        alert("Item updated successfully");
+        setItmTextFieldValues("","","","");
+    }else{
+        alert("updated failed!..");
+    }
+
+});
+
+
 $('#btnViewAllItems').click(function (){
     getAll();
 
@@ -112,6 +139,45 @@ function searchItems(itmCode){
         return null;
 }
 
+
+/*========================
+Delete Item
+=========================*/
+
+function deleteItem(itemCode){
+   let item = searchItems(itemCode);
+   if(item!=null){
+       let indexNumber = items.indexOf(item);
+       items.splice(indexNumber,1);
+       getAll();
+       return true;
+   }else {
+       return false;
+   }
+
+
+}
+
+
+/*========================
+Update Item
+=========================*/
+
+function updateItem(itemCode){
+    let item = searchItems(itemCode);
+    if(item!=null){
+        item.code=$('#InputItmCode').val();
+        item.name=$('#InputItmName').val();
+        item.price=$('#InputItmPrice').val();
+        item.qty=$('#InputItmQty').val();
+        getAll();
+        return true;
+
+    }else {
+        return false;
+    }
+
+}
 
 
 

@@ -34,6 +34,18 @@ $('#btnCusDelete').click(function (){
     }
 })
 
+$('#btnCusUpdate').click(function (){
+   let customerID= $('#InputCusID').val();
+   let response = updateCustomer(customerID);
+   if(response){
+       alert("Customer updated successfully");
+       setCusTextFieldValues("","","","");
+   }else{
+       alert("updated failed!..");
+   }
+
+})
+
 $('#btnGetAll').click(function (){
     getAll();
 
@@ -165,3 +177,22 @@ function deleteCustomer(customerID){
      }
 }
 
+/*========================
+Update customer
+=========================*/
+
+function updateCustomer(customerID){
+  let customer = searchCustomer(customerID);
+  if(customer!=null){
+      customer.id=$('#InputCusID').val();
+      customer.name=$('#InputCusName').val();
+      customer.address=$('#InputCusAddress').val();
+      customer.salary=$('#InputCusSalary').val();
+      loadAllCustomers();
+      return true;
+
+  }else {
+      return false;
+  }
+
+}
