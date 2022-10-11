@@ -726,11 +726,14 @@
                                                     <label for="orderItemQty" class="form-label">Order Qty</label>
                                                     <input type="text" class="form-control" id="orderItemQty">
                                                 </div>
-                                                <div class="col-12">
-                                                    <button type="submit" class="btn btn-danger"> Add Item</button>
-                                                </div>
+                                                <!--<div class="col-12">
+                                                    <button class="btn btn-danger" id="btnAddOrderItem">Add Items</button>
+                                                </div>-->
 
                                             </form>
+                                            <div class="col-12">
+                                                <button class="btn btn-danger" id="btnAddOrderItem">Add Items</button>
+                                            </div>
 
                                         </td>
 
@@ -769,7 +772,7 @@
                     </section>
 
                     <section class="row justify-content-center">
-                        <table class="table table-bordered table-hover bg-white" id="orderDetailsTable">
+                        <table class="table table-bordered table-hover bg-white" >
                             <thead class="bg-info text-white">
                             <tr>
                                 <th>Item Code</th>
@@ -779,37 +782,10 @@
                                 <th>Total</th>
                             </tr>
                             </thead>
-                            <tbdoy>
-                                <tr>
-                                    <td>C001</td>
-                                    <td>Dasun</td>
-                                    <td>Galle</td>
-                                    <td>100000</td>
-                                    <td>100000</td>
-                                </tr>
-                                <tr>
-                                    <td>C001</td>
-                                    <td>Dasun</td>
-                                    <td>Galle</td>
-                                    <td>100000</td>
-                                    <td>100000</td>
-                                </tr>
-                                <tr>
-                                    <td>C001</td>
-                                    <td>Dasun</td>
-                                    <td>Galle</td>
-                                    <td>100000</td>
-                                    <td>100000</td>
-                                </tr>
-                                <tr>
-                                    <td>C001</td>
-                                    <td>Dasun</td>
-                                    <td>Galle</td>
-                                    <td>100000</td>
-                                    <td>100000</td>
-                                </tr>
+                            <tbody id="tblOrderDetails">
 
-                            </tbdoy>
+
+                            </tbody>
                         </table>
 
                     </section>

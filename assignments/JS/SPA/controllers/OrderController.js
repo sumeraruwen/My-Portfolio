@@ -84,3 +84,47 @@ function searchOrderItems(itmCode){
     }
     return null;
 }
+
+
+/*
+====================================
+
+===================================*/
+
+$('#btnAddOrderItem').click(function (){
+
+    let orderItemCode = $('#orderItemCode').val();
+    let orderItemName = $("#orderItemName").val();
+    let orderItemPrice = $("#orderItemPrice").val();
+    let orderItemQty = $("#orderItemQty").val();
+    let orderItemTotal = orderItemPrice * orderItemQty;
+
+    var orderObject = {
+        code: orderItemCode,
+        name: orderItemName,
+        price: orderItemPrice,
+        qty: orderItemQty,
+        total: orderItemTotal
+
+    }
+    orders.push(orderObject);
+    console.log(orders);
+
+    //loadAllCustomers();
+    //bindRowClickEvents();
+    //loadAllCustomersForOption();
+    loadAllOrderItems();
+
+
+});
+
+function loadAllOrderItems(){
+    $('#tblOrderDetails').empty();
+
+    for (var ord of orders){
+
+        var row  = `<tr><td>${ord.code}</td><td>${ord.name}</td><td>${ord.price}</td><td>${ord.qty}</td><td>${ord.total}</td></tr>`;
+        $('#tblOrderDetails').append(row);
+    }
+
+}
