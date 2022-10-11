@@ -155,4 +155,18 @@ $('#inputCash').on('keyup' , function (){
 
     $('#inputBalance').val(balance);
 
-})
+});
+
+
+
+$('#inputDiscount').on('keyup' , function (){
+    let discountAmount = $('#inputDiscount').val();
+
+    let subT =  calTotal(sumVal) - discountAmount;
+    console.log(subT);
+
+    document.getElementById("subVal").innerHTML = "Sub Total : " + subT;
+  //  $('#subVal').val(subT);
+
+
+});
