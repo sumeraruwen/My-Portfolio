@@ -148,18 +148,6 @@ function searchCustomer(cusID){
 }
 
 
-/*$('#InputCusID').on('keydown' , function (event){
-    if(event.key=="Enter"){
-        let typeId = $('#InputCusID').val();
-        let customer = searchCustomer(typeId);
-        if(customer!=null){
-            setTextFieldValues(customer.id,customer.name,customer.address,customer.salary);
-        }
-
-    }
-
-});*/
-
 /*========================
 Delete customer
 =========================*/

@@ -142,6 +142,17 @@ function calTotal(){
 
     document.getElementById("val").innerHTML = "Total : " + sumVal;
     console.log(sumVal);
+    return sumVal;
 
 }
 
+
+$('#inputCash').on('keyup' , function (){
+    let cashAmount = $('#inputCash').val();
+    console.log(cashAmount);
+    let balance = cashAmount - calTotal(sumVal);
+    console.log(balance);
+
+    $('#inputBalance').val(balance);
+
+})
