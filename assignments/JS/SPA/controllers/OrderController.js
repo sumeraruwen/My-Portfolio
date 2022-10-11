@@ -114,6 +114,7 @@ $('#btnAddOrderItem').click(function (){
     //bindRowClickEvents();
     //loadAllCustomersForOption();
     loadAllOrderItems();
+    calTotal();
 
 
 });
@@ -128,3 +129,19 @@ function loadAllOrderItems(){
     }
 
 }
+
+function calTotal(){
+    let tables = document.getElementById("orderTable");
+    sumVal = 0;
+
+    for(var i = 1; i < tables.rows.length; i++)
+    {
+        sumVal = sumVal + parseInt(tables.rows[i].cells[4].innerHTML);
+
+    }
+
+    document.getElementById("val").innerHTML = "Total : " + sumVal;
+    console.log(sumVal);
+
+}
+
