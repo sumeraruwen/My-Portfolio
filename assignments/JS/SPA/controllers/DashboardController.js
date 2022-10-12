@@ -1,4 +1,16 @@
 
+$(window).on('load', function () {
+    console.log("Window on load");
+    $('#customerContent').css('display','none');
+    $('#itemContent').css('display','none');
+    $('#orderP').css('display','none');
+    $('#dashP').css('display','block');
+
+    // $("#loader").css('display','none');
+   // $("#loader").fadeOut(1000);
+});
+
+
 /*  Home nav*/
 $('.nHome').click(function (){
     $('#customerContent').css('display','none');
