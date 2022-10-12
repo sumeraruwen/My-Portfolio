@@ -48,6 +48,12 @@
 
     </style>-->
 
+    <style>
+        .control-error{
+            color: red;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -350,21 +356,25 @@
                             <div  class="mb-4">
                                 <label for="InputCusID">Customer ID</label>
                                 <input class="form-control" id="InputCusID" required type="text">
+                                <span class="control-error" id="lblcusid"></span>
 
                             </div>
                             <div  class="mb-4">
                                 <label for="InputCusName">Customer Name</label>
                                 <input class="form-control" id="InputCusName" type="text">
+                                <span class="control-error" id="lblcusname"></span>
 
                             </div>
                             <div  class="mb-4">
                                 <label for="InputCusAddress">Customer Address</label>
                                 <input class="form-control" id="InputCusAddress" type="text">
+                                <span class="control-error" id="lblcusaddress"></span>
 
                             </div>
                             <div  class="mb-4">
                                 <label for="InputCusSalary">Customer Salary</label>
                                 <input class="form-control" id="InputCusSalary" type="text">
+                                <span class="control-error" id="lblcussalary"></span>
 
                             </div>
                             <div  class="mb-4">

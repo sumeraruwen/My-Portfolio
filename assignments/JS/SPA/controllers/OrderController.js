@@ -8,8 +8,8 @@ function loadAllCustomersForOption() {
 }
 
 
-$('#selectCusID').on('keydown' , function (event){
-    if(event.key=="Enter"){
+$('#selectCusID').on('click' , function (event){
+    //if(event.key=="Enter"){
         let typeId = $('#selectCusID').val();
         let customer = searchOrderCustomer(typeId);
         if(customer!=null){
@@ -20,7 +20,7 @@ $('#selectCusID').on('keydown' , function (event){
 
         }
 
-    }
+   // }
 
 });
 
@@ -54,8 +54,8 @@ function loadAllItemsForOption() {
 
 // =======Search Item=============
 
-$('#selectItmCode').on('keydown', function (event){
-    if(event.key=="Enter"){
+$('#selectItmCode').on('click', function (event){
+   // if(event.key=="Enter"){
         let typeCode= $('#selectItmCode').val();
         let item= searchOrderItems(typeCode);
         if(item!=null){
@@ -64,7 +64,7 @@ $('#selectItmCode').on('keydown', function (event){
             alert("There is no customer for that ID");
             setOrderItmTextFieldValues("","","","");
         }
-    }
+   // }
 
 })
 
