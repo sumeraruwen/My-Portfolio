@@ -1,5 +1,6 @@
 
-$(window).on('load', function () {
+//$(window).on('load', function () {
+$(document).ready(function () {
     console.log("Window on load");
     $('#customerContent').css('display','none');
     $('#itemContent').css('display','none');

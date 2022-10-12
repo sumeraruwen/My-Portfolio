@@ -1,0 +1,17 @@
+#dashP{
+    background-color: #EAEAEA;
+}
+#homeimg{
+    background-color: black;
+    top: 0;
+    position: relative;
+    height: 68vh;
+
+    background: url("img/sc-b1b92a3b316e19ad06d109e51884af71.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.control-error{
+    color: red;
+}
