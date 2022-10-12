@@ -115,6 +115,7 @@ $('#btnAddOrderItem').click(function (){
     //loadAllCustomersForOption();
     loadAllOrderItems();
     calTotal();
+    //subQty();
 
 
 });
@@ -174,10 +175,21 @@ $('#inputDiscount').on('keyup' , function (){
 
 /*
 =================================
-Purchase Order
+subtract item qty
 =================================
 */
 
+function subQty(){
+  let qtyHand = $('#orderItemQtyHand').val();
+  let takeQty = $("#orderItemQty").val();
+
+  let newQty = qtyHand - takeQty;
+    console.log("new qty "+newQty);
+
+
+
+
+}
 
 
 

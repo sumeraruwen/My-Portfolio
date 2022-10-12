@@ -17,7 +17,7 @@ $('#btnPurchase').click(function (){
     console.log(orderDetails);
     alert("order Purchase successfully");
 
-   // $('#tblOrderDetails').empty();
+   $('#tblOrderDetails').empty();
     clearOrderCusTextField();
     $('#val').text("Total : 0");
     $('#subVal').text("Sub Total : 0");
@@ -30,7 +30,7 @@ $('#btnPurchase').click(function (){
 
 function clearOrderCusTextField(){
     $('.form-control').val("");
-    $('#tblOrderDetails>tr>td').val("");
+  //  $('#tblOrderDetails>tr>td').val("");
    /* $('#InputCusName').val(name);
     $('#InputCusAddress').val(address);
     $('#InputCusSalary').val(salary);*/

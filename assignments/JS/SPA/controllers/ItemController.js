@@ -20,6 +20,7 @@ $('#btnSaveItem').click(function (){
     bindRowItemClickEvents();
     loadAllItemsForOption();
     dashItmLoad();
+    //subQty();
 
 });
 
@@ -65,6 +66,7 @@ function getAll(){
         var row  = `<tr><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td></tr>`;
         $('#tblItem').append(row);
     }
+    subQty();
 
 }
 
