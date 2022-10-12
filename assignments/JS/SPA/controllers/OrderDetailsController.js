@@ -17,10 +17,22 @@ $('#btnPurchase').click(function (){
     console.log(orderDetails);
     alert("order Purchase successfully");
 
-   /* loadAllCustomers();
-    bindRowClickEvents();
-    loadAllCustomersForOption();
-    dashCusLoad();*/
+   // $('#tblOrderDetails').empty();
+    clearOrderCusTextField();
+    $('#val').text("Total : 0");
+    $('#subVal').text("Sub Total : 0");
+
+
+    dashOrdLoad();
 
 
 });
+
+function clearOrderCusTextField(){
+    $('.form-control').val("");
+    $('#tblOrderDetails>tr>td').val("");
+   /* $('#InputCusName').val(name);
+    $('#InputCusAddress').val(address);
+    $('#InputCusSalary').val(salary);*/
+
+}

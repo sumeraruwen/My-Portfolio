@@ -188,4 +188,3 @@ function updateCustomer(customerID){
 }
 
 
-$()

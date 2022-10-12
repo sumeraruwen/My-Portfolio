@@ -40,3 +40,8 @@ function dashItmLoad(){
     let total= items.length;
     $('#itmDashB').text(total);
 }
+
+function dashOrdLoad(){
+    let total= orderDetails.length;
+    $('#ordDashB').text(total);
+}
