@@ -205,19 +205,19 @@ customerValidations.push({reg: cusSalaryRegEx, field: $('#InputCusSalary'),error
 
 
 $("#InputCusID,#InputCusName,#InputCusAddress,#InputCusSalary").on('keyup', function (event) {
-    checkValidity();
+    checkItmValidity();
 });
 
 $("#InputCusID,#InputCusName,#InputCusAddress,#InputCusSalary").on('blur', function (event) {
-    checkValidity();
+    checkItmValidity();
 });
 
 
 
-function checkValidity() {
+function checkItmValidity() {
     let errorCount=0;
     for (let validation of customerValidations) {
-        if (check(validation.reg,validation.field)) {
+        if (checkItm(validation.reg,validation.field)) {
             textSuccess(validation.field,"");
         } else {
             errorCount=errorCount+1;
@@ -227,7 +227,7 @@ function checkValidity() {
     setButtonState(errorCount);
 }
 
-function check(regex, txtField) {
+function checkItm(regex, txtField) {
     let inputValue = txtField.val();
     return regex.test(inputValue) ? true : false;
 }

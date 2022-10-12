@@ -87,7 +87,7 @@ function bindRowItemClickEvents() {
 }
 
 $('#InputItmCode').on('keydown', function (event){
-    if(event.key=="Enter"){
+    if(event.key=="Enter" && check(itmCodeRegEx, $("#InputItmCode"))){
         $('#InputItmName').focus();
     }
 })
@@ -181,6 +181,87 @@ function updateItem(itemCode){
         return false;
     }
 
+}
+
+
+
+/*================================= Regx ====================*/
+
+// items reguler expressions
+
+const itmCodeRegEx = /^(I00-)[0-9]{1,3}$/;
+const itmNameRegEx = /^[A-z ]{5,20}$/;
+const itmPriceRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;;
+const itmQtyHandRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+
+let itemValidations = [];
+itemValidations.push({reg: itmCodeRegEx, field: $('#InputItmCode'),error:'Item Code Pattern is Wrong : I00-001'});
+itemValidations.push({reg: itmNameRegEx, field: $('#InputItmName'),error:'Item Name Pattern is Wrong : A-z 5-20'});
+itemValidations.push({reg: itmPriceRegEx, field: $('#InputItmPrice'),error:'Item price Pattern is Wrong :100 or 100.00'});
+itemValidations.push({reg: itmQtyHandRegEx, field: $('#InputItmQty'),error:'Item Qty Pattern is Wrong : 10-10000'});
+
+
+$("#InputItmCode,#InputItmName,#InputItmPrice,#InputItmQty").on('keyup', function (event) {
+    checkValidity();
+});
+
+$("#InputItmCode,#InputItmName,#InputItmPrice,#InputItmQty").on('blur', function (event) {
+    checkValidity();
+});
+
+
+
+function checkValidity() {
+    let errorCount=0;
+    for (let validation of itemValidations) {
+        if (check(validation.reg,validation.field)) {
+            textSuccess(validation.field,"");
+        } else {
+            errorCount=errorCount+1;
+            setTextError(validation.field,validation.error);
+        }
+    }
+    setButtonState(errorCount);
+}
+
+function check(regex, txtField) {
+    let inputValue = txtField.val();
+    return regex.test(inputValue) ? true : false;
+}
+
+function setTextError(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid red');
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function textSuccess(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid green');
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function defaultText(txtField,error) {
+    txtField.css("border", "1px solid #ced4da");
+    txtField.parent().children('span').text(error);
+}
+
+function focusText(txtField) {
+    txtField.focus();
+}
+
+function setButtonState(value){
+    if (value>0){
+        $("#btnSaveItem").attr('disabled',true);
+    }else{
+        $("#btnSaveItem").attr('disabled',false);
+    }
 }
 
 
