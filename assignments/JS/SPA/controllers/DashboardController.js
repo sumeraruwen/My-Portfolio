@@ -30,3 +30,13 @@ $('.nOrder').click(function (){
     $('#dashP').css('display','none');
     $('#itemContent').css('display','none');
 });
+
+function dashCusLoad(){
+    let total = customers.length;
+    $('#cusDashB').text(total);
+}
+
+function dashItmLoad(){
+    let total= items.length;
+    $('#itmDashB').text(total);
+}

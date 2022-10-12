@@ -19,6 +19,7 @@ $('#btnCustomer').click(function (){
     loadAllCustomers();
     bindRowClickEvents();
     loadAllCustomersForOption();
+    dashCusLoad();
 
 
 });
@@ -185,3 +186,6 @@ function updateCustomer(customerID){
   }
 
 }
+
+
+$()
