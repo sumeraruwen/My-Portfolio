@@ -49,20 +49,16 @@
 
     </style>-->
 
-   <!-- <style>
-        .control-error{
-            color: red;
-        }
-    </style>
--->
+
+
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="asserts/img/Blue%20Modern%20Company%20Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Origin.Life
+            <img src="asserts/img/orange.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          FO Decious
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -347,7 +343,108 @@
 
 <main class="container-fluid" id="customerContent">
     <section class="row">
-        <div class="col-4">
+        <div class="col-5">
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Customer Search</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <form class="d-flex flex-column flex-lg-row" role="search">
+                                <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                                       aria-label="Search" id="searchCustomerInput">
+                            </form>
+                            <br>
+                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                Name / ID
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </td>
+
+                    </tr>
+                </tbdoy>
+            </table>
+        </div>
+        <br>
+
+
+       <!-- <div class="col-4">
+
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Add Customer</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <div  class="mb-4">
+                                <label for="InputCusID">Customer ID</label>
+                                <input class="form-control" id="InputCusID" required type="text">
+                                <span class="control-error" id="lblcusid"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusName">Customer Name</label>
+                                <input class="form-control" id="InputCusName" type="text">
+                                <span class="control-error" id="lblcusname"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusAddress">Customer Address</label>
+                                <input class="form-control" id="InputCusAddress" type="text">
+                                <span class="control-error" id="lblcusaddress"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputCusSalary">Customer Salary</label>
+                                <input class="form-control" id="InputCusSalary" type="text">
+                                <span class="control-error" id="lblcussalary"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <button class="btn btn-primary" id="btnCustomer">Save Customer</button>
+                                <button class="btn btn-danger" id="btnCusDelete">Remove</button>
+                                <button class="btn btn-warning" id="btnCusUpdate">Update</button>
+                                <button class="btn btn-success" id="btnCusGetAll">Get All</button>
+                                <button class="btn btn-danger" id="btn-clear1">Clear All</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbdoy>
+            </table>
+
+        </div>-->
+        <div class="col-7">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-5">
 
             <table class="table table-bordered table-hover bg-white">
                 <thead class="bg-success text-white">
@@ -396,21 +493,7 @@
             </table>
 
         </div>
-        <div class="col-8">
-            <table class="table table-bordered table-hover">
-                <thead class="bg-success text-white">
-                <tr>
-                    <th>Customer ID</th>
-                    <th>Customer Name</th>
-                    <th>Customer Address</th>
-                    <th>Customer Salary</th>
-                </tr>
-                </thead>
-                <tbody id="tblCustomer">
 
-                </tbody>
-            </table>
-        </div>
     </section>
 </main>
 
@@ -573,7 +656,38 @@
 
 <main class="container-fluid" id="itemContent">
     <section class="row">
-        <div class="col-4">
+        <div class="col-5">
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Item Search</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <form class="d-flex flex-column flex-lg-row" role="search">
+                                <input class="form-control me-2 mb-2 mb-lg-0" type="search" placeholder="Search"
+                                       aria-label="Search" id="searchItemInput">
+                            </form>
+                            <br>
+                            <button class="btn btn-warning dropdown-toggle me-2 mb-2 mb-lg-0" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                Name / ID
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </td>
+
+                    </tr>
+                </tbdoy>
+            </table>
+        </div>
+       <!-- <div class="col-4">
 
             <table class="table table-bordered table-hover bg-white">
                 <thead class="bg-success text-white">
@@ -621,8 +735,8 @@
                 </tbdoy>
             </table>
 
-        </div>
-        <div class="col-8">
+        </div>-->
+        <div class="col-7">
             <table class="table table-bordered table-hover">
                 <thead class="bg-success text-white">
                 <tr>
@@ -637,6 +751,59 @@
                 </tbody>
             </table>
         </div>
+    </section>
+
+    <section class="row">
+        <div class="col-5">
+
+            <table class="table table-bordered table-hover bg-white">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Add Item</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>
+                            <div  class="mb-4">
+                                <label for="InputItmCode">Item Code</label>
+                                <input class="form-control" id="InputItmCode" required type="text">
+                                <span class="control-error" id="lblitmid"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItmName">Item Name</label>
+                                <input class="form-control" id="InputItmName" type="text">
+                                <span class="control-error" id="lblitmname"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItmPrice">Item Price</label>
+                                <input class="form-control" id="InputItmPrice" type="text">
+                                <span class="control-error" id="lblitmprice"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <label for="InputItmQty">Item Qty</label>
+                                <input class="form-control" id="InputItmQty" type="text">
+                                <span class="control-error" id="lblitmqty"></span>
+
+                            </div>
+                            <div  class="mb-4">
+                                <button class="btn btn-primary" id="btnSaveItem">Save Item</button>
+                                <button class="btn btn-danger" id="btnItemDelete">Remove</button>
+                                <button class="btn btn-warning" id="btnItemUpdate">Update</button>
+                                <button class="btn btn-success" id="btnGetAll">Get All</button>
+                                <button class="btn btn-danger" id="btnClearItem">Clear All</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbdoy>
+            </table>
+
+        </div>
+
     </section>
 </main>
 

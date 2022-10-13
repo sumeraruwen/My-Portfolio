@@ -1,6 +1,7 @@
 
 $('#btnPurchase').click(function (){
 
+
     let orderID = $('#inputOrderID').val();
     let customerID = $("#InputCusID").val();
     let total = $("#val").text();

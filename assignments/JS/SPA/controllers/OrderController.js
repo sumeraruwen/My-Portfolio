@@ -149,12 +149,20 @@ function calTotal(){
 
 
 $('#inputCash').on('keyup' , function (){
+
+
     let cashAmount = $('#inputCash').val();
     console.log(cashAmount);
     let balance = cashAmount - calTotal(sumVal);
     console.log(balance);
 
     $('#inputBalance').val(balance);
+
+    if(calTotal(sumVal) > cashAmount){
+        $('#btnPurchase').attr('disabled',true);
+    }else{
+        $('#btnPurchase').attr('disabled', false);
+    }
 
 });
 
@@ -186,10 +194,17 @@ function subQty(){
   let newQty = qtyHand - takeQty;
     console.log("new qty "+newQty);
 
-
-
-
 }
+
+/*
+$('#btnPurchase').click(function (){
+    if(cashAmount(cah)){
+
+    }
+
+
+});
+*/
 
 
 

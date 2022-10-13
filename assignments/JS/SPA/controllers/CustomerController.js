@@ -267,3 +267,13 @@ function setButtonState(value){
     }
 }
 
+
+$(document).ready(function (){
+    $("#searchCustomerInput").on('keyup',function (){
+        var value = $(this).val().toLowerCase();
+
+        $("#tblCustomer>tr").filter(function (){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+});
