@@ -27,11 +27,12 @@ $('#btnCustomer').click(function (){
 $('#btnCusDelete').click(function (){
     let deleteID = $('#InputCusID').val();
     if(deleteCustomer(deleteID)){
-        alert("Customer Successfully deleted");
+       // alert("Customer Successfully deleted");
+        swal("Delete Successfully!", "You clicked the button!", "success");
         setCusTextFieldValues("","","","");
 
     }else {
-        alert("no such customer");
+        swal("No Customer for ID!", "You clicked the button!", "warning");
 
     }
 })
@@ -40,7 +41,7 @@ $('#btnCusUpdate').click(function (){
    let customerID= $('#InputCusID').val();
    let response = updateCustomer(customerID);
    if(response){
-       alert("Customer updated successfully");
+       swal("Update Successfully!", "You clicked the button!", "success");
        setCusTextFieldValues("","","","");
    }else{
        alert("updated failed!..");
@@ -121,7 +122,7 @@ $('#InputCusID,#InputCusName,#InputCusAddress,#InputCusSalary').on('keydown',fun
             if(customer!=null){
                 setCusTextFieldValues(customer.id,customer.name,customer.address,customer.salary);
             }else{
-                alert("There is no customer for that ID");
+                swal("No Customer for ID!", "You clicked the button!", "warning");
                 setCusTextFieldValues("","","","");
 
             }
@@ -277,3 +278,4 @@ $(document).ready(function (){
         });
     });
 });
+

@@ -147,9 +147,21 @@ function calTotal(){
 
 }
 
+/*$('#orderItemQty').on('keypress' , function (){
+    let ItemQty = $("#orderItemQty").val();
+    console.log(ItemQty);
+    let qtyHand = $('#orderItemQtyHand').val();
+    console.log(qtyHand);
+
+    if(ItemQty >= qtyHand ){
+        $('#btnAddOrderItem').attr('disabled',true);
+    }else{
+        $('#btnAddOrderItem').attr('disabled', false);
+    }
+});*/
+
 
 $('#inputCash').on('keyup' , function (){
-
 
     let cashAmount = $('#inputCash').val();
     console.log(cashAmount);

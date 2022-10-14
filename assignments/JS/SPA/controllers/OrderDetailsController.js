@@ -16,10 +16,10 @@ $('#btnPurchase').click(function (){
     }
     orderDetails.push(orderDetailsObject);
     console.log(orderDetails);
-    alert("order Purchase successfully");
+    swal("Order Purchase Successfully!", "You clicked the button!", "success");
 
    $('#tblOrderDetails').empty();
-    clearOrderCusTextField();
+   clearOrderCusTextField();
     $('#val').text("Total : 0");
     $('#subVal').text("Sub Total : 0");
 
@@ -30,7 +30,7 @@ $('#btnPurchase').click(function (){
 });
 
 function clearOrderCusTextField(){
-    $('.form-control').val("");
+    $('#orderCustomerID ,#orderCustomerName ,#orderCustomerSalary,#orderCustomerSalary , #orderItemPrice , #orderItemName , #orderItemQtyHand, #orderItemQty , #inputCash ,#inputBalance,#inputDiscount, #orderCustomerAddress,#orderItemCode' ).val("");
   //  $('#tblOrderDetails>tr>td').val("");
    /* $('#InputCusName').val(name);
     $('#InputCusAddress').val(address);

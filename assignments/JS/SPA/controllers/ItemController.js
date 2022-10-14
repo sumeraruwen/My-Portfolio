@@ -27,11 +27,11 @@ $('#btnSaveItem').click(function (){
 $('#btnItemDelete').click(function (){
     let deleteCode = $('#InputItmCode').val();
     if(deleteItem(deleteCode)){
-        alert("Item Successfully deleted");
+        swal("Delete Successfully!", "You clicked the button!", "success");
         setItmTextFieldValues("","","","");
 
     }else {
-        alert("no such Item");
+        swal("No Item for ID!", "You clicked the button!", "warning");
 
     }
 
@@ -42,10 +42,10 @@ $('#btnItemUpdate').click(function (){
     let itemCode= $('#InputItmCode').val();
     let response = updateItem(itemCode);
     if(response){
-        alert("Item updated successfully");
+        swal("Updated Successfully!", "You clicked the button!", "success");
         setItmTextFieldValues("","","","");
     }else{
-        alert("updated failed!..");
+        swal("Updated Failed!", "You clicked the button!", "warning");
     }
 
 });
@@ -119,7 +119,7 @@ $('#InputItmCode').on('keydown', function (event){
         if(item!=null){
             setItmTextFieldValues(item.code,item.name,item.price,item.qty);
         }else{
-            alert("There is no customer for that ID");
+            swal("No Item for ID!", "You clicked the button!", "warning");
             setItmTextFieldValues("","","","");
         }
     }
