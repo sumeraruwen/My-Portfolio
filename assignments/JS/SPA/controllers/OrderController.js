@@ -189,6 +189,12 @@ $('#inputDiscount').on('keyup' , function (){
     document.getElementById("subVal").innerHTML = "Sub Total : " + subT;
   //  $('#subVal').val(subT);
 
+    let cashAmount = $('#inputCash').val();
+    let balance = cashAmount - calTotal(sumVal);
+
+    let newBalance = balance - discountAmount;
+
+    $('#inputBalance').val(newBalance);
 
 });
 
