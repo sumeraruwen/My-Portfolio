@@ -49,10 +49,6 @@ $('#btnPurchase').click(function (){
 
 function clearOrderCusTextField(){
     $('#orderCustomerID ,#orderCustomerName ,#orderCustomerSalary,#orderCustomerSalary , #orderItemPrice , #orderItemName , #orderItemQtyHand, #orderItemQty , #inputCash ,#inputBalance,#inputDiscount, #orderCustomerAddress,#orderItemCode' ).val("");
-  //  $('#tblOrderDetails>tr>td').val("");
-   /* $('#InputCusName').val(name);
-    $('#InputCusAddress').val(address);
-    $('#InputCusSalary').val(salary);*/
 
 }
 

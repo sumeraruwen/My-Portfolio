@@ -20,6 +20,7 @@ $('#btnSaveItem').click(function (){
     bindRowItemClickEvents();
     loadAllItemsForOption();
     dashItmLoad();
+    setItmTextFieldValues("","","","");
     //subQty();
 
 });

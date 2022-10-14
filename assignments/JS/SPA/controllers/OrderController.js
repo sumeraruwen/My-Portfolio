@@ -110,13 +110,8 @@ $('#btnAddOrderItem').click(function (){
     orders.push(orderObject);
     console.log(orders);
 
-    //loadAllCustomers();
-    //bindRowClickEvents();
-    //loadAllCustomersForOption();
     loadAllOrderItems();
     calTotal();
-    //subQty();
-
 
 });
 
