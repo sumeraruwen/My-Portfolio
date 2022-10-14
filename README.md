@@ -1,4 +1,4 @@
-<h1>My Portfolio</h1><br>
+<h1>My Portfolio</h1>
 
 <h1>Tech/framework used</h1>
 
@@ -7,7 +7,7 @@
 <li>CSS</li>
 <li>Javascript</li>
 </ul>
-<br>
+
 
 <h1>References</h1>
 
