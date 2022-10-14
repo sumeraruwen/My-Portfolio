@@ -214,15 +214,5 @@ function subQty(){
 
 }
 
-/*
-$('#btnPurchase').click(function (){
-    if(cashAmount(cah)){
-
-    }
-
-
-});
-*/
-
 
 

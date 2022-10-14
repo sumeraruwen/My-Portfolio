@@ -217,3 +217,51 @@ footer{
     margin-top: 60px;
 
 }
+
+@media (max-width: 1231px) {
+    main > section:nth-child(1) > aside > h2 {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        top: 160px;
+        left: 28vw;
+        font-size: 50px;
+        text-align: center;
+        alignment: center;
+    }
+
+
+}
+
+    @media  (min-width: 1179px) and (max-width: 1200px) {
+        main > section:nth-child(1) > aside > h2 {
+
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            top: 160px;
+            left: 28vw;
+            font-size: 50px;
+            text-align: center;
+            alignment: center;
+        }
+
+
+    }
+
+@media   (min-width: 700px) and (max-width: 1000px) {
+    #assignments{
+        width: 75%;
+        height: 200vh;
+        left: 0;
+        right: 0;
+        top: 100px;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+
+    }
+
+
+}

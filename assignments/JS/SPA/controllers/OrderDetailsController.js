@@ -1,3 +1,19 @@
+$(document).ready(function (){
+    generateOrderID();
+
+});
+
+function generateOrderID() {
+    if (orderDetails.length == 0) {
+        $('#inputOrderID').val("o001");
+    } else {
+        let odCount = orderDetails.length+1 ;
+
+        $('#inputOrderID').val("o00" + odCount);
+        console.log(odCount);
+
+    }
+}
 
 $('#btnPurchase').click(function (){
 
@@ -25,7 +41,7 @@ $('#btnPurchase').click(function (){
     $('#tblOrderDetails').empty();
     orders.length=0;
 
-
+    generateOrderID();
     dashOrdLoad();
 
 
@@ -39,3 +55,4 @@ function clearOrderCusTextField(){
     $('#InputCusSalary').val(salary);*/
 
 }
+
