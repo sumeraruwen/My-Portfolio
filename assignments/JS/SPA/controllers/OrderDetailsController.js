@@ -56,3 +56,11 @@ function clearOrderCusTextField(){
 
 }
 
+$('#btnClearOrderItem').click(function (){
+   clearOrderCusTextField();
+    $('#tblOrderDetails').empty();
+   orders.length=0;
+
+
+});
+
