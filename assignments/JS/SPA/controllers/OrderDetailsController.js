@@ -18,10 +18,12 @@ $('#btnPurchase').click(function (){
     console.log(orderDetails);
     swal("Order Purchase Successfully!", "You clicked the button!", "success");
 
-   $('#tblOrderDetails').empty();
-   clearOrderCusTextField();
+
+    clearOrderCusTextField();
     $('#val').text("Total : 0");
     $('#subVal').text("Sub Total : 0");
+    $('#tblOrderDetails').empty();
+    orders.length=0;
 
 
     dashOrdLoad();
