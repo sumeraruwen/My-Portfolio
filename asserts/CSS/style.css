@@ -655,6 +655,11 @@ main>section:nth-child(5)>section:nth-child(2)>div>div{
     height: 255px;
     background-color: gray;
 }
+main>section:nth-child(5)>section:nth-child(2)>div>div:hover{
+    /*transform:scale(1.03);
+    cursor: pointer;
+    transition: all .3s ease 0s;*/
+}
 main>section:nth-child(5)>section:nth-child(2)>div:nth-child(1)>div{
     background: url("../images/Sailing-WordPress-theme-630x516.jpg");
     background-size: cover;
