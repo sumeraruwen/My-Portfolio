@@ -49,6 +49,7 @@ $('#btnItemUpdate').click(function (){
         swal("Updated Failed!", "You clicked the button!", "warning");
     }
 
+
 });
 
 
@@ -67,7 +68,7 @@ function getAll(){
         var row  = `<tr><td>${item.code}</td><td>${item.name}</td><td>${item.price}</td><td>${item.qty}</td></tr>`;
         $('#tblItem').append(row);
     }
-    subQty();
+   // subQty();
 
 }
 

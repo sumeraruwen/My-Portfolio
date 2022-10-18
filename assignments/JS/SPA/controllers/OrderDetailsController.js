@@ -1,3 +1,5 @@
+
+
 $(document).ready(function (){
     generateOrderID();
 
@@ -53,10 +55,9 @@ function clearOrderCusTextField(){
 }
 
 $('#btnClearOrderItem').click(function (){
-   clearOrderCusTextField();
+    clearOrderCusTextField();
     $('#tblOrderDetails').empty();
-   orders.length=0;
+    orders.length=0;
 
 
 });
-

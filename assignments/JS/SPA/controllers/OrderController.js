@@ -11,26 +11,39 @@ function loadAllCustomersForOption() {
 $('#selectCusID').on('click' , function (event){
     //if(event.key=="Enter"){
         let typeId = $('#selectCusID').val();
-        let customer = searchOrderCustomer(typeId);
+
+        for (let cus of customers){
+            if(cus.id == typeId){
+                $('#orderCustomerID').val(cus.id);
+                $('#orderCustomerName').val(cus.name);
+                $('#orderCustomerAddress').val(cus.address);
+                $('#orderCustomerSalary').val(cus.salary);
+
+            }
+
+        }
+
+
+      /*  let customer = searchOrderCustomer(typeId);
         if(customer!=null){
             setOrderCusTextFieldValues(customer.id,customer.name,customer.address,customer.salary);
         }else{
             alert("There is no customer for that ID");
             setOrderCusTextFieldValues("","","","");
 
-        }
+        }*/
 
    // }
 
 });
 
-function setOrderCusTextFieldValues(id,name,address,salary){
+/*function setOrderCusTextFieldValues(id,name,address,salary){
     $('#orderCustomerID').val(id);
     $('#orderCustomerName').val(name);
     $('#orderCustomerAddress').val(address);
     $('#orderCustomerSalary').val(salary);
 
-}
+}*/
 
 function searchOrderCustomer(cusID){
     for(let customer of customers){
@@ -57,24 +70,34 @@ function loadAllItemsForOption() {
 $('#selectItmCode').on('click', function (event){
    // if(event.key=="Enter"){
         let typeCode= $('#selectItmCode').val();
-        let item= searchOrderItems(typeCode);
+        for(let itm of items){
+            if(itm.code == typeCode){
+                $('#orderItemCode').val(itm.code);
+                $('#orderItemName').val(itm.name);
+                $('#orderItemPrice').val(itm.price);
+                $('#orderItemQtyHand').val(itm.qty);
+
+            }
+        }
+
+       /* let item= searchOrderItems(typeCode);
         if(item!=null){
             setOrderItmTextFieldValues(item.code,item.name,item.price,item.qty);
         }else{
             alert("There is no customer for that ID");
             setOrderItmTextFieldValues("","","","");
-        }
+        }*/
    // }
 
 })
 
-function setOrderItmTextFieldValues(code, name ,price , qty){
+/*function setOrderItmTextFieldValues(code, name ,price , qty){
     $('#orderItemCode').val(code);
     $('#orderItemName').val(name);
     $('#orderItemPrice').val(price);
     $('#orderItemQtyHand').val(qty);
 
-}
+}*/
 
 function searchOrderItems(itmCode){
     for(let item of items){
@@ -99,6 +122,10 @@ $('#btnAddOrderItem').click(function (){
     let orderItemQty = $("#orderItemQty").val();
     let orderItemTotal = orderItemPrice * orderItemQty;
 
+    //let qtyHand = $('#orderItemQtyHand');
+
+
+
     var orderObject = {
         code: orderItemCode,
         name: orderItemName,
@@ -110,10 +137,35 @@ $('#btnAddOrderItem').click(function (){
     orders.push(orderObject);
     console.log(orders);
 
-    loadAllOrderItems();
+   loadAllOrderItems();
+   // calTotal();
+   // subQty();
+
+   // let qtyHand = $('#orderItemQtyHand').val();
+    let takeQty = $("#orderItemQty").val();
+    let typeCode= $('#selectItmCode').val();
+
+    for(let item of items){
+        if(item.code == typeCode){
+            item.qty  = item.qty - takeQty;
+            $('#orderItemQtyHand').val( item.qty);
+        }
+
+       // let newQty = qtyHand - takeQty;
+       // console.log("new qty "+items.qty );
+      //  items.qty - takeQty;
+        //return newQty;
+      //  $('#orderItemQtyHand').val(newQty);
+    }
+
+  loadAllOrderItems();
     calTotal();
+    getAll();
+
 
 });
+
+
 
 function loadAllOrderItems(){
     $('#tblOrderDetails').empty();
@@ -200,14 +252,19 @@ subtract item qty
 =================================
 */
 
-function subQty(){
+/*function subQty(){
   let qtyHand = $('#orderItemQtyHand').val();
   let takeQty = $("#orderItemQty").val();
 
   let newQty = qtyHand - takeQty;
-    console.log("new qty "+newQty);
+   console.log("new qty "+items.qty );
+    items.qty - takeQty;
+   // return newQty;
+  $('#orderItemQtyHand').val(newQty);
 
-}
+
+
+}*/
 
 
 
