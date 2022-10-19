@@ -239,7 +239,7 @@ $('#inputDiscount').on('keyup' , function (){
     let cashAmount = $('#inputCash').val();
     let balance = cashAmount - calTotal(sumVal);
 
-    let newBalance = balance - discountAmount;
+    let newBalance = balance - (-discountAmount);
 
     $('#inputBalance').val(newBalance);
 
