@@ -6,14 +6,21 @@ $('#btnCustomer').click(function (){
     let customerAddress = $("#InputCusAddress").val();
     let customerSalary = $("#InputCusSalary").val();
 
-    var customerObject = {
+    var cusObj = Object.assign({},customerObject);
+             cusObj.id = customerID;
+             cusObj.name = customerName;
+             cusObj.address = customerAddress;
+             cusObj.salary = customerSalary;
+
+   /* var customerObject = {
         id: customerID,
         name: customerName,
         address: customerAddress,
         salary: customerSalary
 
-    }
-    customers.push(customerObject);
+    }*/
+   // customers.push(customerObject);
+    customers.push(cusObj);
     console.log(customers);
 
     loadAllCustomers();

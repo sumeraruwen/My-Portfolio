@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AAD Queue</title>
+  <link rel="stylesheet" href="asserts/css/bootstrap.min.css">
+  <style>
+    .b1{
+      margin-top: 40px;
+      height: 50px;
+      width:60px;
+      background-color: #0a53be;
+      color: white;
+      position: relative;
+
+
+    }
+    #container{
+      height: 80px;
+      width: 90vw;
+      border-bottom: 2px dashed red;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #container>div{
+      position: relative;
+      margin-left: 50px;
+     right: 150px;
+    }
+
+    #img{
+      width: 100px;
+      height: 100px;
+      background-color: #20c997;
+      background: url("asserts/download.png");
+      background-size: cover;
+      position: absolute;
+      top: 200px;
+      right: 0;
+
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+  <div class="mb-3">
+    <label for="txtName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="txtName" aria-describedby="emailHelp">
+
+  </div>
+  <div class="mb-3">
+    <label for="txtColor" class="form-label">Color picker</label>
+    <input type="color" class="form-control form-control-color" id="txtColor" value="#563d7c" title="Choose your color">
+  </div>
+  <button type="submit" class="btn btn-primary" id="btnAdd">Add</button>
+
+  <main>
+    <section id="container" class="mt-5">
+
+
+    </section>
+
+    <section id="img">
+
+    </section>
+
+
+  </main>
+
+  <script src="asserts/js/jquery-3.6.1.min.js"></script>
+  <script>
+
+    var cueData={
+      person:[
+        {name:'sumera', color:'red'},
+        {name:'viki', color:'green'},
+        {name:'supipi', color:'blue'}
+      ],
+      nextPerson:function (){
+       let lastPerson = this.person.pop();
+       this.person.unshift(lastPerson);
+      }
+
+    }
+
+
+    renderQue();
+    function renderQue(){
+      $('#container').empty();
+      for (let i=0;i<cueData.person.length;i++) {
+        $("#container").append(`<div style="background-color: ${cueData.person[i].color}"><h1>${cueData.person[i].name}</h1></div>`);
+      }
+      cueData.nextPerson();
+    }
+
+    setInterval(renderQue,900)
+
+    $('#btnAdd').click(function (){
+     let name = $('#txtName').val();
+     let color = $('#txtColor').val();
+
+     cueData.person.unshift({name: name,color: color})
+    })
+
+  </script>
+
+</body>
+</html>
