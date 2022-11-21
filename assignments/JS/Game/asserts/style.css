@@ -1,0 +1,16 @@
+.body{
+    margin: 0px;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url("hztl_zs2i_180829.jpg");
+    background-size: cover;
+}
+
+.boy{
+    height: 280px;
+    margin-top: 420px;
+
+}
