@@ -68,18 +68,18 @@ function backgroundAnimation(){
 
 var jumpImgNum =1;
 var jumpAnimationNum =0;
-boytop = 347;
+boytop = 420;
 
 function jumpAnimation(){
     jumpImgNum =jumpImgNum +1;
 
-    if(jumpImgNum <= 6){
+    if(jumpImgNum <= 7){
         boytop = boytop -70;
         $(".boy").css("top",boytop+"px");
 
 
     }
-    if(jumpImgNum >= 7){
+    if(jumpImgNum >= 8){
         boytop = boytop +70;
         $(".boy").css("top",boytop+"px");
 
@@ -114,18 +114,18 @@ bMarginLeft=1800;
 
 function createBarriers(){
 
-    for (var i = 0; i <=10 ; i++) {
+    for (var i = 0; i <=20 ; i++) {
 
         $(".background").append("<div style='margin-left:" + bMarginLeft + "px ' id='barrier"+i+"' ></div>");
         // var barrier = "div"+i;
 
         // $("#barrier").css("marginLeft",bMarginLeft+"px");
 
-        if(i<5){
-            bMarginLeft = bMarginLeft +3000;
+        if(i<10){
+            bMarginLeft = bMarginLeft +1200;
         }
-        if(i>=5){
-            bMarginLeft = bMarginLeft +1500;
+        if(i>=10){
+            bMarginLeft = bMarginLeft +500;
         }
     }
 
