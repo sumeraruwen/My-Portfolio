@@ -5,13 +5,17 @@
     <title>Sample Game</title>
     <link rel="stylesheet" href="asserts/style.css">
 </head>
-<body class="body" onload="idleAnimationStart()">
-    <div class="background">
-        <img src="asserts/Idle%20(1).png" alt="" class="boy" id="boyIdle1">
+<body class="body" onload="idleAnimationStart(),createBarriers()">
+<div class="background" id="background">
+    <img src="asserts/Idle%20(1).png" alt="" class="boy" id="boyIdle1">
+    <!--  <div id="barrier" class="barrier"></div>-->
 
-    </div>
 
-    <script src="asserts/js/jquery-3.6.1.min.js"></script>
-    <script src="asserts/js/script.js"></script>
+
+</div>
+<div id="score">0</div>
+
+<script src="asserts/js/jquery-3.6.1.min.js"></script>
+<script src="asserts/js/script.js"></script>
 </body>
 </html>

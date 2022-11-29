@@ -7,11 +7,51 @@
     height: 100vh;
     background-image: url("hztl_zs2i_180829.jpg");
     background-size: cover;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    position: absolute;
+
 }
 
 .boy{
-    height: 280px;
-    margin-top: 420px;
     position: absolute;
+    height: 280px;
+    top: 420px;
+
+
+}
+/*
+#barrier{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 560px;
+    margin-left: 500px;
+}
+*/
+
+.background>div{
+    width: 200px;
+    height:200px;
+    /*  background-color: red;*/
+    position: absolute;
+    margin-top: 480px;
+    /* bottom: 20px;*/
+    /* margin-left: 1000px;*/
+    background-image: url("craig-mullins-zombie-boss-03-attack.gif");
+    /* background-size: cover;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#score{
+    font-size: 30px;
+    position: absolute;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: red;
+
 
 }
